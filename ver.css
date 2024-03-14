@@ -1,0 +1,174 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #eb8007;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ffd700; /
+}
+
+section.featured-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+    background-color: #fff;
+    margin-top: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product:hover {
+    transform: scale(1.05); 
+}
+
+.price {
+    font-weight: bold;
+    color: #eb8007;
+    display: block;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #eb8007;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #ffd700; 
+}
+
+footer {
+    background-color: #eb8007;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+button {
+    background-color: #ff8800;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    border-radius: 5px;
+    border: 2px solid #eb8007;
+}
+
+button:hover {
+    background-color: #ffa332; 
+    transform: scale(1.05); 
+}
+
+footer {
+    background-color: #eb8007;
+    color: #030303;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    color: #ff9100;
+    background-color: #ffffff;      
+}
+
+
+
+
+<li><a id="link" class="nav-link" href="#" class="animate__animated animate__fadeInDown">Main</a> </li>
+<li><a id="link1" class="nav-link" href="#" class="animate__animated animate__fadeInDown">items</a></li>
+<li><a id="link2" class="nav-link" href="#" class="animate__animated animate__fadeInDown">about us</a></li>
+<li><a id="link3" class="nav-link" href="#" class="animate__animated animate__fadeInDown">contact</a><li class="nav-item">
+</li><a id="link4" class="nav-link" href="index2.html" class="animate__animated animate__fadeInDown">sign up</a><li class="nav-item"></li>
+</li><a id="link5" class="nav-link" href="index1.html " class="animate__animated animate__fadeInDown">login in</a></li>
