@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    background-image: url('../assets/images/atal2.png');
+    background-repeat: no-repeat;
+    background-size: 160px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+}
+
+a:hover {
+    color: #000000;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.featured-products {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.product {
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 2);
+    box-sizing: border-box;
+    height: 250px;
+    width: 250px;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    width: 251px;
+    border-radius: 20px;
+    margin-top: 50 px;
+    height: 175px;
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.product h2 {
+    margin-top: 10px;
+    font-size: 24px;
+    color: #060606;
+}
+
+.product p {
+    color: #000000;
+    margin-top: 100px;
+
+}
+
+.product .price {
+    color: #303030;
+    font-weight: bold;
+    margin-top: -17px;
+    display: block;
+}
+
+.product button {
+    background-color: #333;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: #555;
+    border-radius: 20px;
+}
+
+.animate_animated {
+    animation-duration: 1s;
+}
+
+.animate_fadeInDown {
+    animation-name: fadeInDown;
+}
+
+.animate_fadeInUp {
+    animation-name: fadeInUp;
+}

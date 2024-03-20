@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('./reset.css');
+@import url('./ver.css');
+header {
+    background-color: #333;
+    height: 120px;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    background-image: url('../assets/images/atal2.png');
+    background-repeat: no-repeat;
+    background-size: 160px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+}
+
+a:hover {
+    color: #000000;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    background-image: url('../assets/images/bg_5.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 105vh;
+
+}
+
+#login-container {
+    cursor:default;
+    padding: 40px;
+    width: 350px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0px -1px 20px 1.0px #238386,
+    0px -1px 20px 1.0px #238386,
+    0px -1px 20px 1.0px #238386;
+}
+
+#h1{
+    text-align: center;
+    color: var(--clr-white);
+    font-weight: bold;
+    
+}
+
+.input-group :hover{
+    cursor: pointer;
+}
+
+.input-group input {
+    width: 70%;
+    padding: 7px;
+    margin-top: 65px;
+    margin-left: 50px;
+    box-shadow: 0px -1px 20px 1.0px #238386,
+    0px -1px 20px 1.0px #238386,
+    0px -1px 20px 1.0px #238386;
+
+    border-radius: 5px;
+    background: rgba(255,255,255,0);
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    border: 1px solid rgba(255,255,255,0);
+    border: 1px solid rgba(242,245,246,0.025);
+}
+#login-container:focus-within{
+    background: rgba(242,245,246,0.05);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(242,245,246,0.025); 
+        
+}
+
+#remember{
+    visibility:hidden;
+    color: purple;
+}
+
+#login-container:focus-within #remember{
+    visibility: visible;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#remember input[type="checkbox"]:active {
+    margin-right: 5px;
+    border-radius: 20px;
+}
+
+#signUp-link {
+    text-align: center;
+    font-weight: bold;
+    color:var(--clr-white);
+    margin-top: 50px;
+}
+
+#signUpBtn-link {
+    color: purple;
+    border-radius: 5px;
+    text-decoration: none;
+}
+#signUpBtn-link:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    box-shadow:0px -1px 20px 1.0px red,
+    0px -1px 20px 1.0px red; 
+}
+#Cl-Lo-wrapper{
+    visibility: hidden;
+}
+#login-container:focus-within #Cl-Lo-wrapper{
+    visibility: visible;
+    text-align: center;
+    
+}
+.btn-Cl-Lo{
+    width: 60px;
+    height: 20px;
+    margin-top: 50px;
+    color:purple;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    background: rgba(255,255,255,0);
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    border: 1px solid rgba(255,255,255,0);
+    border: 1px solid rgba(242,245,246,0.025);
+    
+}
+.btn-Cl-Lo:hover{
+    cursor: pointer;
+    box-shadow:0px -1px 20px 1.0px red,
+    0px -1px 20px 1.0px red;  
+}
+
