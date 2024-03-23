@@ -1,55 +1,58 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @import url('./reset.css');
 @import url('./ver.css');
-header {
-    background-color: #333;
-    height: 120px;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    background-image: url('../assets/images/atal2.png');
-    background-repeat: no-repeat;
-    background-size: 160px;
-}
-
-nav {
-    margin-top: 20px;
-}
-
-
-
-li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-a {
-    text-decoration: none;
-    color: #fff;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 16px;
-}
-
-a:hover {
-    color: #000000;
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-body {
-    background-color: #f0f0f0;
+body{
     background-image: url('../assets/images/bg_5.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    
+    background-size: cover; 
+    background-position:center;
+    background-attachment: fixed; 
+}
+ul {
+    list-style: none;
+    background: rgba(242,245,246,0.05);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(242,245,246,0.025);
+}
+
+ul li {
+    display: inline-block;
+    position: relative; 
+}
+
+
+ul li a { 
+    display: block;
+    padding: 20px 25px;
+    color: var(--clr-Basic);
+    text-decoration: none;
+    text-align: center;
+    font-size: var(--p-f-size);
+}
+ul li ul .drop-down li{
+    display: block;
+}
+ul .drop-down {
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li:hover .drop-down {
+    display: block;
+}
+
+ ul li ul.drop-down{
+    display: block;
+ }
+.content {
+    padding: 20px;
 }
 
 #container {
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
     height: 105vh;
@@ -57,25 +60,33 @@ body {
 }
 
 #login-container {
+    position: center;
     cursor:default;
     padding: 40px;
     width: 350px;
     height: 400px;
     border-radius: 10px;
-    box-shadow: 0px -1px 20px 1.0px #238386,
-    0px -1px 20px 1.0px #238386,
-    0px -1px 20px 1.0px #238386;
+    box-shadow: 0px -1px 20px 1.0px var(--clr-Basic ),
+    0px -1px 20px 1.0px var(--clr-Basic ),
+    0px -1px 20px 1.0px var(--clr-Basic );
+}
+#login-container ::-webkit-input-placeholder{
+    color: var(--clr-Basic);
 }
 
-#h1{
+#Login{
     text-align: center;
-    color: var(--clr-white);
+    color: var(--clr-Basic );
     font-weight: bold;
+    font-size:  1.75em;
     
 }
 
 .input-group :hover{
     cursor: pointer;
+    box-shadow: 0px -1px 20px 1.0px var(--clr-hover-list),
+    0px -1px 20px 1.0px var(--clr-hover-list),
+    0px -1px 20px 1.0px var(--clr-hover-list);
 }
 
 .input-group input {
@@ -83,9 +94,9 @@ body {
     padding: 7px;
     margin-top: 65px;
     margin-left: 50px;
-    box-shadow: 0px -1px 20px 1.0px #238386,
-    0px -1px 20px 1.0px #238386,
-    0px -1px 20px 1.0px #238386;
+    box-shadow: 0px -1px 20px 1.0px var(--clr-Basic ),
+    0px -1px 20px 1.0px var(--clr-Basic ),
+    0px -1px 20px 1.0px var(--clr-Basic );
 
     border-radius: 5px;
     background: rgba(255,255,255,0);
@@ -122,7 +133,7 @@ body {
 #signUp-link {
     text-align: center;
     font-weight: bold;
-    color:var(--clr-white);
+    color:var(--clr-Basic );
     margin-top: 50px;
 }
 
@@ -133,9 +144,10 @@ body {
 }
 #signUpBtn-link:hover{
     cursor: pointer;
-    text-decoration: underline;
-    box-shadow:0px -1px 20px 1.0px red,
-    0px -1px 20px 1.0px red; 
+    text-decoration: underline ,wavy;
+    box-shadow:0px -1px 20px 1.0px var(--clr-hover-list),
+    0px -1px 20px 1.0px var(--clr-hover-list),
+    0px -1px 20px 1.0px var(--clr-hover-list); 
 }
 #Cl-Lo-wrapper{
     visibility: hidden;
@@ -150,7 +162,7 @@ body {
     height: 20px;
     margin-top: 50px;
     color:purple;
-    font-size: 15px;
+    font-size: var(--p-f-size);
     font-weight: bold;
     border-radius: 5px;
     background: rgba(255,255,255,0);
@@ -162,7 +174,17 @@ body {
 }
 .btn-Cl-Lo:hover{
     cursor: pointer;
-    box-shadow:0px -1px 20px 1.0px red,
-    0px -1px 20px 1.0px red;  
+    box-shadow:0px -1px 20px 1.0px var(--clr-hover-list),
+    0px -1px 20px 1.0px var(--clr-hover-list),
+    0px -1px 20px 1.0px var(--clr-hover-list);  
 }
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
+}
+
+ 
+
 

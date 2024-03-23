@@ -1,15 +1,17 @@
 :root{
 
+    --clr-hover-list:red;
+    --clr-Basic :#fff;
+    --clr-defult:black;
     --clr-brown:#7F4F24;               /*משנים את השמות אחר כך*/
     --clr-light-brown:#A68A64;
     --clr-grey:#C2C5AA;
     --clr-green-grey:#656D4A;
     --clr-dark-green:#333D29;
-    --clr-white:#fff;
-    --clr-blue:darkblue;
 
-                                     /*font size*/
-    --normal-size:25px;
-    --header-size:calc(4em*);                              
+/*font size*/
+--header-f-size:1.70em; 
+--p-f-size: calc(var(--header-f-size)*0.5) ;
+
 
 }

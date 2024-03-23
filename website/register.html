@@ -3,28 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style2.css">
-    <title>register</title>
+    <link rel="stylesheet" href="register.css">
+    <title>Register</title>
 </head>
 <body>
-    
-    <div class="wrapper">
-        <form action="" class="form">
-            <h1 class="title">register</h1>
-            <div class="inp">
-                <input type="text" name="" id="user" class="input" placeholder="Username">
-                <i class="fa-solid"></i>
+    <section>
+        <header class="grid">
+            <div class="content">
+
+                <nav>
+                    <ul id="headerBtn">
+                        <li>
+                            <a href="./main.html">
+                            <span>Home</span>  
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>About</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <span>Contact</span> 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./log_in.html">
+                                <span>Login</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./register.html">
+                                <span>Register</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <div id="container">
+                <div id="Register-container">
+                    <h1 id="Register">Register</h1>
+                    <form action="#">
+                        <div class="input-group">
+                            <input type="text" placeholder="First Name" calss="input-group" name="First name" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" placeholder="Last name" id="Last name" name="Last name" required>
+                        </div>
+                        <div id="Birth-date" class="input-group">
+                            <label for="dob">Date of Birth:</label>
+                            <input type="date" id="dob" name="dob" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="tel" placeholder="Phone Number" id="phone Number" name="phone Number">
+                        </div>
+                        <div class="input-group">
+                            <input type="email"  placeholder="E-mail" name="email" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" placeholder="Username" id="UserName" name="UserName" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="password" placeholder="Password" name="password" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="password" placeholder="Confirm-Password" name="confirm-password" required>
+                        </div>
+                        <div id="Cl-Re-wrapper">
+                            <button id="RegisterBtn" class="btn-Cl-Re" type="submit"><a href="log_in.html">Register</a></button>
+                            <button id="clearBtn" class="btn-Cl-Re" type="reset">clear </button>
+                        </div>
+                        <div id="Remember">
+                            <input id="remember-me" type="checkbox" >
+                            <label for="remember-me">Remember me</label>
+                        </div>
+                        
+                    </form>
+                            
+                </div>
             </div>
-            <div class="inp">
-                <input type="password" name="" id="pass" class="input" placeholder="password">
-                <i class="fa-solid fa-lock"></i>
-            </div>
-            <div class="inp">
-                <input type="verify password" name="" id="vpass" class="input" placeholder="verify password">
-                <i class="fa-solid fa-lock"></i>
-            </div>
-            <a class="login" id="login"><button class="submit">register</button></a> 
-        </form>
-        <a href="index1.html" class="link" id="link"><button>login</button></a>
+                
+        </section>
+    </div>
 </body>
 </html>

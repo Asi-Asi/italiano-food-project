@@ -1,0 +1,143 @@
+body{
+
+
+    background-image: url('../assets/images/bg_5.png');
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed; 
+}
+
+.content {
+    padding: 20px;
+}
+    
+
+
+#container  {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#Register-container {
+    padding: 60px;
+    padding-top: 10px;
+    margin-top:300px;
+    width: 400px;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: 0px -1px 20px 1.0px var(--clr-Basic ),
+    0px -1px 20px 1.0px var(--clr-Basic ),
+    0px -1px 20px 1.0px var(--clr-Basic );
+}
+
+#Register{
+    text-align: center;
+    color: var(--clr-Basic );
+    font-weight: bold;
+    font-size:  var(--header-f-size);
+    
+}
+.input-group input{
+    width: 70%;
+    padding: 7px;
+    margin-top: 30px;
+    margin-left: 50px;
+    box-shadow: 0px -1px 20px 1.0px var(--clr-Basic ),
+    0px -1px 20px 1.0px var(--clr-Basic ),
+    0px -1px 20px 1.0px var(--clr-Basic );
+    border-radius: 5px;
+    background: rgba(255,255,255,0);
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    border: 1px solid rgba(255,255,255,0);
+    border: 1px solid rgba(242,245,246,0.025);
+}
+.input-group :hover{
+    cursor: pointer;
+    box-shadow: 0px -1px 20px 1.0px var(--clr-hover-list),
+    0px -1px 20px 1.0px var(--clr-hover-list),
+    0px -1px 20px 1.0px var(--clr-hover-list);
+}
+#Birth-date {
+    padding-top: 30px;
+}
+#Birth-date input{
+    margin-top:  -25px;
+    padding-top: 40px;
+}
+#Birth-date label{
+    color: var(--clr-Basic);
+    margin-left: 140px;
+    font-weight: bolder;
+    font-size: var(--p-f-size);
+    color: var(--clr-place-holder-defult);
+    text-decoration:overline underline wavy;
+    
+}
+#Register-container ::-webkit-input-placeholder{
+    color: var(--clr-Basic);
+}
+#Register-container:focus-within{
+    background: rgba(242,245,246,0.05);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(242,245,246,0.025); 
+        
+}
+.btn-Cl-Re a {
+    text-decoration: none; 
+    color: purple;
+}
+#Remember{
+    visibility:hidden;
+    color: purple;
+}
+#Register-container:focus-within #Remember{
+    visibility: visible;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#Cl-Re-wrapper {
+    text-align: center;
+
+}
+#Cl-Re-wrapper{
+    visibility: hidden;
+}
+#Register-container:focus-within #Cl-Re-wrapper{
+    visibility: visible;
+    text-align: center;
+}
+#RegisterBtn{
+    text-decoration: none;
+}
+
+.btn-Cl-Re{
+    width: fit-content;
+    height: fit-content;
+    margin-top: 50px;
+    color:purple;
+    font-size: var(--p-f-size);
+    font-weight: bold;
+    border-radius: 5px;
+    background: rgba(255,255,255,0);
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    border: 1px solid rgba(255,255,255,0);
+    border: 1px solid rgba(242,245,246,0.025);
+    
+}
+.btn-Cl-Re:hover{
+    cursor: pointer;
+    box-shadow:0px -1px 20px 1.0px var(--clr-hover-list),
+    0px -1px 20px 1.0px var(--clr-hover-list),
+    0px -1px 20px 1.0px var(--clr-hover-list);  
+}
+#remember input[type="checkbox"] {
+    margin-right: 500px;
+    border-radius: 20px;
+}
+
