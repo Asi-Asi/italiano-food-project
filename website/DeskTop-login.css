@@ -7,21 +7,29 @@ body{
     background-position:center;
     background-attachment: fixed; 
 }
+.content {
+    padding: 20px;
+}
+#logo img{
+    width: 90px;
+    height: center;
+    
+}
 ul {
     list-style: none;
-    background: rgba(242,245,246,0.05);
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
-    border: 1px solid rgba(242,245,246,0.025);
+    background-color: var(--clr-beige);
+    
+    position: sticky;
+    z-index: 999;
+    height:  fit-content;
 }
 
 ul li {
     display: inline-block;
-    position: relative; 
+    position: relative;
 }
 
-
-ul li a { 
+ul li a {
     display: block;
     padding: 20px 25px;
     color: var(--clr-Basic);
@@ -29,26 +37,46 @@ ul li a {
     text-align: center;
     font-size: var(--p-f-size);
 }
-ul li ul .drop-down li{
-    display: block;
-}
-ul .drop-down {
+
+ul li ul.drop-down {
+    border: 2px solid var(--clr-bronze);
     width: 100%;
-    background-color: black;
+    background-image: url('../assets/images/italy\ flag_-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100px;
+    background-position-y: bottom;
+    border-radius: 10px;
     position: absolute;
     z-index: 999;
     display: none;
+    top: 100%;
+    
 }
 
-ul li:hover .drop-down {
+ul li ul.drop-down li {
+    display: block;
+    border-radius: 10px;
+}
+
+ul li ul.drop-down li:hover {
+    box-shadow: 0px -1px 20px 1.0px var(--clr-Basic),
+    0px -1px 20px 1.0px var(--clr-Basic),
+    0px -1px 20px 1.0px var(--clr-Basic);
+}
+
+ul li:hover > ul.drop-down {
     display: block;
 }
 
- ul li ul.drop-down{
+ul li ul.drop-down li {
     display: block;
- }
-.content {
-    padding: 20px;
+    padding: 10px;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #container {
@@ -115,7 +143,7 @@ ul li:hover .drop-down {
 
 #remember{
     visibility:hidden;
-    color: purple;
+    color: green;
 }
 
 #login-container:focus-within #remember{
@@ -138,7 +166,7 @@ ul li:hover .drop-down {
 }
 
 #signUpBtn-link {
-    color: purple;
+    color: var(--clr-green);
     border-radius: 5px;
     text-decoration: none;
 }
@@ -161,7 +189,7 @@ ul li:hover .drop-down {
     width: 60px;
     height: 20px;
     margin-top: 50px;
-    color:purple;
+    color:green;
     font-size: var(--p-f-size);
     font-weight: bold;
     border-radius: 5px;
@@ -181,8 +209,11 @@ ul li:hover .drop-down {
 
 .grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1.5fr 0.25fr 0.25fr 0.25fr 0.25fr;
     
+}
+.grid #logo{
+   text-align: left;
 }
 
  

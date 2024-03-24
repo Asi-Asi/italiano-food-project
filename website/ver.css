@@ -1,13 +1,11 @@
 :root{
 
-    --clr-hover-list:red;
+    --clr-hover-list:#b4000F;
     --clr-Basic :#fff;
-    --clr-defult:black;
-    --clr-brown:#7F4F24;               /*משנים את השמות אחר כך*/
-    --clr-light-brown:#A68A64;
-    --clr-grey:#C2C5AA;
-    --clr-green-grey:#656D4A;
-    --clr-dark-green:#333D29;
+    --clr-green:#00ca1b;
+    --clr-bronze:#AF672D;
+    --clr-beige:#E4B455;               /*משנים את השמות אחר כך*/
+    
 
 /*font size*/
 --header-f-size:1.70em; 
