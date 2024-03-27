@@ -1,16 +1,114 @@
-/* @import url('./reset.css');
-@import url('./ver.css'); */
 body{
+background-image: url('../assets/images/register_box.jpg');
+background-repeat: no-repeat;
+background-size: 100% 100%;
+background-size: cover;
 
-
-    background-image: url('../assets/images/bg_5.png');
-    background-size: cover; 
-    background-position: center;
-    background-attachment: fixed; 
+   background-color: var(--clr-black);
 }
 
 .content {
     padding: 20px;
+}
+#navbar {
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    background: rgba(255, 255, 255, 0);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px); 
+    padding:  3px; 
+}
+#logo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#logo img {
+    width: 90px;
+}
+
+nav ul {
+    list-style: none;
+    background: rgba(255, 255, 255, 0);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    z-index: 999;
+    height: fit-content;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+ nav ul li {
+    display: inline-block;
+    position: relative;
+    font-weight: bolder;
+}
+
+nav ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: var(--clr-Basic);
+    text-decoration: none;
+}
+    
+    
+
+
+nav ul li ul.drop-down {
+    border: 2px solid var(--clr-bronze);
+    width: 100%;
+    background-image: url('../assets/images/italy\ flag_-bg.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:fit-content;
+    background-position:center;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    top: 100%;
+    text-align: center;
+    
+}
+
+nav ul li ul.drop-down li {
+    display: block;
+    border-radius: 10px;
+}
+
+nav ul li ul.drop-down li:hover {
+    box-shadow: 0px -1px 20px 1.0px var(--clr-Basic),
+    0px -1px 20px 1.0px var(--clr-Basic),
+    0px -1px 20px 1.0px var(--clr-Basic);
+}
+
+nav ul li:hover > ul.drop-down {
+    display: block;
+}
+
+nav ul li ul.drop-down li {
+    display: block;
+    padding: 10px;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav ul li ul.drop-down li  span{
+    font-weight: bold;
+    color: var(--clr-black);
+    font-size: var(--p-f-size);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr;  
 }
     
 
@@ -21,13 +119,17 @@ body{
     align-items: center;
     height: 100vh;
 }
+#Register{
+    font-size: var(--header-f-size);
+}
 #Register-container {
     padding: 60px;
     padding-top: 10px;
-    margin-top:250px;
+    margin-top:70vh;
     width: 400px;
-    height: 580px;
+    height: 650px;
     border-radius: 10px;
+    background-color: var(--clr-black);
     box-shadow: 0px -1px 20px 1.0px var(--clr-Basic ),
     0px -1px 20px 1.0px var(--clr-black ),
     0px -1px 20px 1.0px var(--clr-Basic );
@@ -37,7 +139,7 @@ body{
     text-align: center;
     color: var(--clr-Basic );
     font-weight: bold;
-    font-size:  var(--header-f-size);
+    font-size:  var(--main-header-f-size);
     
 }
 .input-group input{
@@ -61,6 +163,13 @@ body{
     0px -1px 20px 1.0px var(--clr-hover-list),
     0px -1px 20px 1.0px var(--clr-hover-list);
 }
+.input-group :focus{
+    cursor: pointer;
+    box-shadow: 0px -1px 20px 1.0px var(--clr-hover-list),
+    0px -1px 20px 1.0px var(--clr-hover-list),
+    0px -1px 20px 1.0px var(--clr-hover-list);
+    
+}
 #Birth-date {
     padding-top: 30px;
 }
@@ -80,13 +189,7 @@ body{
 #Register-container ::-webkit-input-placeholder{
     color: var(--clr-Basic);
 }
-#Register-container:focus-within{
-    background: rgba(242,245,246,0.05);
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
-    border: 1px solid rgba(242,245,246,0.025); 
-        
-}
+
 .btn-Cl-Re a {
     text-decoration: none; 
     color: var(--clr-Basic);

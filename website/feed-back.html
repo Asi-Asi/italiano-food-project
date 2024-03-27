@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="AboutUs.css">
-    <title>AboutUs</title>
+    <link rel="stylesheet" href="feed-back.css">
+    <title>contact-us</title>
 </head>
 <body>
-    <div class="content">
+    <div>
         <header>
             <nav id="navbar">
                 <ul class="grid">
@@ -102,58 +102,35 @@
                 </ul>
             </nav>
         </header>
+    </div>
+    <div id="content">
         <main>
-            <h1><b>About us<b></b></h1>
-            
-            <section>
-                <aside>
-                    <div id="image1">
-                        <img src="..//assets/images/About US-image.jpg" alt="">
-                    </div>
-                </aside>
-                <div id="Founders">
-                    <div class="image-container">
-                        <img src="../assets/images/sofia.jpg" alt="">
-                        <img src="../assets/images/jiovani.jpg" alt="">
-                        <img src="../assets/images/luka.jpg" alt="">
-                    </div>
-                    
-                    <h2>Meet the Founders</h2>
-                    <p> Maria, Luca, and Giovanni are not just the founders of "Taste of Italy", they are the heart and soul of the restaurant. Each of them brings their unique culinary skills and passion for Italian cuisine to the table, creating a dining experience that is truly one-of-a-kind.</p>
-                    
+            <div id="container">
+                <h1>Feedback</h1>
+                <div id="form-container">
+                    <form action="">
+                        <section>
+                            <div class="input-groub">
+                                <input type="text" placeholder="subject" required>
+                            </div>
+                            <div class="input-groub">
+                                <input type="text" placeholder="User-Name" required>
+                            </div>
+                            <div class="input-groub">
+                                <input type="email"  placeholder="Email" name="email">
+                            </div>
+                            <div id="massege-container">
+                                <input type="text"placeholder="massege"re>
+                            </div>
+                        </section>
+                    <section>
+                        <button id="send-Btn" type="submit"><a href="">Send</a></button>
+                    </section>
+                    </form>
                 </div>
-
-            </section>
-            
-            <section>
-                <aside>
-                    <div id="image2">
-                        <img src="../assets/images/About Us-2.jpg" alt="">
-                    </div>
-                </aside>
-                <div id="Our-Specialties">
-                    <h2>Our Specialties</h2>
-                    <p>From Luca's hand-tossed pizzas to Maria's homemade pastas and Giovanni's decadent desserts, every dish at "Taste of Italy" is a celebration of Italian culinary traditions. Our menu is a testament to our commitment to authenticity and quality.</p>
-                        <img src="../assets/images/pasta dish.jpg" alt="">  
-                </div>
-            </section>
-
-            <section>
-                <aside>
-                    <div id="image3">
-                        <img src="../assets/images/Image of dripping coffee.jpg" alt="">
-                    </div>
-                </aside>
-                <div id="Experience">
-                    <img src="../assets/images/close-up-hand-preparing-coffee.jpg" alt="">
-                    <h2>Experience "Taste of Italy"</h2>
-                    <p>At "Taste of Italy", we believe in creating a dining experience that goes beyond just good food. Our cozy trattoria is a place where you can feel at home, where you can gather with friends and family to create cherished memories. Come join us and experience the warmth of Italian hospitality.</p>
-                </div>
-            </section>
+            </div>
         </main>
-        
-
-        <footer>
+        <!-- <footer>
             <div id="address">
                 <h2><i><b>TASTE OF ITALY RESTAURANT</b></i></h2>
                 <p><b>
@@ -178,7 +155,9 @@
                 
                 <p><b>&copy; 2021 Taste of Italy. All rights reserved.</b></p>
             </div>
-         </footer>
+         </footer> -->
     </div>
+    
+    
 </body>
 </html>

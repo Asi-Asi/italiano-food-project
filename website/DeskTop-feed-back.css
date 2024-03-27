@@ -1,15 +1,97 @@
-
 body{
-    
     background-image:url('../assets/images/form_bg.jpg');
     background-repeat: no-repeat; 
     background-size:100% 100%;
     background-position:0 30%;
-    background-attachment: fixed; 
+    background-attachment: fixed;  
 }
-#content {
-    padding: 20px;
+
+
+#logo img {
+    width: 90px;
+}
+
+nav ul {
+    list-style: none;
+    background: rgba(255, 255, 255, 0);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    z-index: 999;
+    height: fit-content;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+ nav ul li {
+    display: inline-block;
+    position: relative;
+    font-weight: bolder;
+}
+
+nav ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: var(--clr-Basic);
     text-decoration: none;
+}
+    
+    
+
+
+nav ul li ul.drop-down {
+    border: 2px solid var(--clr-bronze);
+    width: 100%;
+    background-image: url('../assets/images/italy\ flag_-bg.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:fit-content;
+    background-position:center;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    top: 100%;
+    text-align: center;
+    
+}
+
+nav ul li ul.drop-down li {
+    display: block;
+    border-radius: 10px;
+}
+
+nav ul li ul.drop-down li:hover {
+    box-shadow: 0px -1px 20px 1.0px var(--clr-Basic),
+    0px -1px 20px 1.0px var(--clr-Basic),
+    0px -1px 20px 1.0px var(--clr-Basic);
+}
+
+nav ul li:hover > ul.drop-down {
+    display: block;
+}
+
+nav ul li ul.drop-down li {
+    display: block;
+    padding: 10px;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav ul li ul.drop-down li  span{
+    font-weight: bold;
+    color: var(--clr-black);
+    font-size: var(--p-f-size);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr;  
 }
 
 #container h1{
@@ -26,8 +108,8 @@ form ::placeholder{
 
 }
 #container{
-    background-image: url(../assets/images/inside_forms_bg.jpg);
-    background-position: 0 30% ;
+    background-image: url('../assets/images/rate_us.jpg');
+    background-position: center ;
     background-size: cover;
     background-attachment:scroll; 
     background-attachment: flex;
@@ -53,7 +135,7 @@ form input{
     cursor: pointer;
     padding: 7px;
     width:200px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     border-radius: 10px;
     background: rgba(255,255,255,0);
     -webkit-backdrop-filter: blur(1px);
@@ -100,6 +182,7 @@ form input:focus{
 }
 form  button{
     cursor: pointer;
+    width:217px;
     padding: 8px 30px;
     border-radius: 10px;
     font-size: var(--p-f-size);
@@ -113,9 +196,15 @@ form  button{
     0px -1px 20px 1.0px var(--clr-Basic );
     
 }
+form input ::placeholder{
+    color: vara(--clr-Basic);
+    font-weight: bolder;
+}
 form button a{
+
     text-decoration: none;
     color: var(--clr-Basic);
+    font-weight: bolder;
 }
 
 form button:hover{
@@ -125,46 +214,4 @@ form button:hover{
     background: rgba(255,255,255,0.2);
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
-        
-
 }
-
-footer {
-    position: relative;
-    width: 100%;
-    overflow-y:auto;
-    max-height: calc(100vh - 70vh);
-    bottom:0;
-    background-image: url(../assets/images/footer_background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 50vh;
-    border-top: 5px double var(--clr-green);
-}
-#address{
-    border: double black 5px;
-    text-align: center;
-    color: var(--clr-bronze);
-    margin-top: 20px;
-}
-div+p{
-    color: var(--clr-bronze);
-    text-align: center;
-}
-.icons img{
-    width: 35px;
-    height: auto;
-    margin: 10px;
-
-}
-footer .icons{
-    position: relative;  
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    margin: 10px 0;
-    flex-wrap: wrap;
-  
-}
-
