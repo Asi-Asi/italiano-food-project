@@ -1,3 +1,5 @@
+/* @import url('./reset.css');
+@import url('./ver.css'); */
 body{
 
 
@@ -22,12 +24,12 @@ body{
 #Register-container {
     padding: 60px;
     padding-top: 10px;
-    margin-top:300px;
+    margin-top:250px;
     width: 400px;
-    height: 600px;
+    height: 580px;
     border-radius: 10px;
     box-shadow: 0px -1px 20px 1.0px var(--clr-Basic ),
-    0px -1px 20px 1.0px var(--clr-Basic ),
+    0px -1px 20px 1.0px var(--clr-black ),
     0px -1px 20px 1.0px var(--clr-Basic );
 }
 
@@ -44,7 +46,7 @@ body{
     margin-top: 30px;
     margin-left: 50px;
     box-shadow: 0px -1px 20px 1.0px var(--clr-Basic ),
-    0px -1px 20px 1.0px var(--clr-Basic ),
+    0px -1px 20px 1.0px var(--clr-black),
     0px -1px 20px 1.0px var(--clr-Basic );
     border-radius: 5px;
     background: rgba(255,255,255,0);
@@ -71,7 +73,7 @@ body{
     margin-left: 140px;
     font-weight: bolder;
     font-size: var(--p-f-size);
-    color: var(--clr-place-holder-defult);
+    color: var(--clr-Basic);
     text-decoration:overline underline wavy;
     
 }
@@ -87,11 +89,11 @@ body{
 }
 .btn-Cl-Re a {
     text-decoration: none; 
-    color: purple;
+    color: var(--clr-Basic);
 }
 #Remember{
     visibility:hidden;
-    color: purple;
+    color: var(--clr-Basic);
 }
 #Register-container:focus-within #Remember{
     visibility: visible;
@@ -119,7 +121,7 @@ body{
     width: fit-content;
     height: fit-content;
     margin-top: 50px;
-    color:purple;
+    color:var(--clr-Basic);
     font-size: var(--p-f-size);
     font-weight: bold;
     border-radius: 5px;

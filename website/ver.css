@@ -1,15 +1,17 @@
 :root{
 
-    --clr-hover-list:#b4000F;
-    --clr-Basic :#fff;
     --clr-green:#00ca1b;
-    --clr-bronze:#AF672D;
-    --clr-beige:#E4B455;               /*משנים את השמות אחר כך*/
-    
+    --clr-Basic :#fff;
+    --clr-hover-list:#b4000F;
+    --clr-bronze:#693103;
+    --clr-beige:#E4B455; 
+    --clr-black:#141414; 
+    --clr-secondary:#1d1d1d;   
 
 /*font size*/
---header-f-size:1.70em; 
---p-f-size: calc(var(--header-f-size)*0.5) ;
+--main-header-f-size: 2.5em;
+--header-f-size:1.30em; 
+--p-f-size: calc(var(--header-f-size)*0.8) ;
 
 
 }

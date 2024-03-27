@@ -1,0 +1,171 @@
+
+body{
+    
+    background-image:url(../assets/images/RateUs_bg.jpg);
+
+    background-repeat: no-repeat; 
+    background-size:100% 100%;
+    background-position:0 30%;
+    background-attachment: fixed; 
+}
+#content {
+    padding: 20px;
+    text-decoration: none;
+}
+
+#container h1{
+    font-size: var(--main-header-f-size);
+    color: var(--clr-Basic);
+    margin-top: -190PX;
+}
+#form-container{
+    margin-top: 100px;
+}
+form ::placeholder{
+    color: var(--clr-Basic);
+    font-size: var(--p-f-size);
+
+}
+#container{
+    background-image: url(../assets/images/inside_forms_bg.jpg);
+    background-position: 0 30% ;
+    background-size: cover;
+    background-attachment:scroll; 
+    background-attachment: flex;
+    cursor: default;
+    margin-top: 20vh;
+    color:var(Basic);
+    text-align: center;
+    border: double 5px var(--clr-green);
+    width: 50%;
+    height: calc(100vh - 60vh);
+    margin-left: 26%;
+    padding-top: 15%;
+    border-radius: 10px;
+    box-shadow: 0px -1px 20px 1.0px var(--clr-Basic ),
+    0px -1px 20px 1.0px var(--clr-black ),
+    0px -1px 20px 1.0px var(--clr-Basic );
+    margin-bottom: 200px;
+
+}
+
+form input{
+    max-width: calc(width(container)-20px);
+    cursor: pointer;
+    padding: 7px;
+    width:200px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0);
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    border: 1px solid rgba(255,255,255,0);
+    border: 1px solid rgba(242,245,246,0.025);
+    box-shadow: 0px -1px 20px 1.0px var(--clr-Basic ),
+    0px -1px 20px 1.0px var(--clr-black ),
+    0px -1px 20px 1.0px var(--clr-Basic );
+}
+
+
+
+form input:hover{
+    box-shadow: 0px -1px 20px 1.0px var(--clr-hover-list),
+    0px -1px 20px 1.0px var(--clr-hover-list),
+    0px -1px 20px 1.0px var(--clr-hover-list);
+    background: rgba(255,255,255,0.2);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    
+}
+form input:focus{
+    box-shadow: 0px -1px 20px 1.0px var(--clr-hover-list),
+    0px -1px 20px 1.0px var(--clr-hover-list),
+    0px -1px 20px 1.0px var(--clr-hover-list);
+    background: rgba(255,255,255,0.2);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    
+}
+
+#Email-massege input{
+    width:422px;
+}
+
+#massege-container input{
+    padding-top: 40px;
+}
+
+#massege-container input::placeholder {
+    position: absolute;
+    top: 0px;
+}
+form  button{
+    cursor: pointer;
+    padding: 8px 30px;
+    border-radius: 10px;
+    font-size: var(--p-f-size);
+    background: rgba(255,255,255,0);
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    border: 1px solid rgba(255,255,255,0);
+    border: 1px solid rgba(242,245,246,0.025);
+    box-shadow: 0px -1px 20px 1.0px var(--clr-Basic ),
+    0px -1px 20px 1.0px var(--clr-black ),
+    0px -1px 20px 1.0px var(--clr-Basic );
+    
+}
+form button a{
+    text-decoration: none;
+    color: var(--clr-Basic);
+}
+
+form button:hover{
+    box-shadow: 0px -1px 20px 1.0px var(--clr-hover-list),
+    0px -1px 20px 1.0px var(--clr-hover-list),
+    0px -1px 20px 1.0px var(--clr-hover-list);    
+    background: rgba(255,255,255,0.2);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+        
+
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    overflow-y:auto;
+    max-height: calc(100vh - 70vh);
+    bottom:0;
+    background-image: url(../assets/images/footer_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+    border-top: 5px double var(--clr-green);
+}
+#address{
+    border: double black 5px;
+    text-align: center;
+    color: var(--clr-bronze);
+    margin-top: 20px;
+}
+div+p{
+    color: var(--clr-bronze);
+    text-align: center;
+}
+.icons img{
+    width: 35px;
+    height: auto;
+    margin: 10px;
+
+}
+footer .icons{
+    position: relative;  
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 10px 0;
+    flex-wrap: wrap;
+  
+}
+

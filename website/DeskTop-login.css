@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-@import url('./reset.css');
-@import url('./ver.css');
 body{
     background-image: url('../assets/images/bg_5.png');
     background-size: cover; 
@@ -17,7 +14,9 @@ body{
 }
 ul {
     list-style: none;
-    background-color: var(--clr-beige);
+    background: rgba(255,255,255,0);
+-webkit-backdrop-filter: blur(10px);
+backdrop-filter: blur(10px);
     
     position: sticky;
     z-index: 999;
@@ -42,10 +41,10 @@ ul li ul.drop-down {
     border: 2px solid var(--clr-bronze);
     width: 100%;
     background-image: url('../assets/images/italy\ flag_-bg.jpg');
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
     height: 100px;
-    background-position-y: bottom;
+    background-position:center;
     border-radius: 10px;
     position: absolute;
     z-index: 999;
@@ -78,6 +77,18 @@ ul {
     justify-content: space-between;
     align-items: center;
 }
+ul li ul.drop-down li  span{
+    font-weight: bolder;
+    color: var(--clr-black);
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1.5fr 0.25fr 0.25fr 0.25fr 0.25fr;
+    
+}
+.grid #logo{
+    text-align: left;
+ }
 
 #container {
     display:flex;
@@ -95,7 +106,7 @@ ul {
     height: 400px;
     border-radius: 10px;
     box-shadow: 0px -1px 20px 1.0px var(--clr-Basic ),
-    0px -1px 20px 1.0px var(--clr-Basic ),
+    0px -1px 20px 1.0px var(--clr-black ),
     0px -1px 20px 1.0px var(--clr-Basic );
 }
 #login-container ::-webkit-input-placeholder{
@@ -143,7 +154,7 @@ ul {
 
 #remember{
     visibility:hidden;
-    color: green;
+    color: var(--clr-green);
 }
 
 #login-container:focus-within #remember{
@@ -189,7 +200,7 @@ ul {
     width: 60px;
     height: 20px;
     margin-top: 50px;
-    color:green;
+    color:var(--clr-green);
     font-size: var(--p-f-size);
     font-weight: bold;
     border-radius: 5px;
@@ -212,9 +223,7 @@ ul {
     grid-template-columns: 1.5fr 0.25fr 0.25fr 0.25fr 0.25fr;
     
 }
-.grid #logo{
-   text-align: left;
-}
+
 
  
 
