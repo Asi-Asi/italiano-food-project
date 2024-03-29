@@ -7,6 +7,119 @@ body{
     background-position:0 30%;
     background-attachment: fixed; 
 }
+body {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: var(--clr-black);
+    background-size: cover;
+    color: var(--clr-Basic);
+}
+p{
+    margin-top: 20px;
+}
+h{
+    margin-top: 20px;
+}
+#navbar {
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    background: rgba(255, 255, 255, 0);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px); 
+    padding:  3px; 
+}
+#logo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#logo img {
+    width: 90px;
+}
+
+nav ul {
+    list-style: none;
+    background: rgba(255, 255, 255, 0);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    z-index: 999;
+    height: fit-content;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+ nav ul li {
+    display: inline-block;
+    position: relative;
+    font-weight: bolder;
+}
+
+nav ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: var(--clr-Basic);
+    text-decoration: none;
+}
+    
+    
+
+
+nav ul li ul.drop-down {
+    border: 2px solid var(--clr-bronze);
+    width: 100%;
+    background-image: url('../assets/images/italy\ flag_-bg.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:fit-content;
+    background-position:center;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    top: 100%;
+    text-align: center;
+    
+}
+
+nav ul li ul.drop-down li {
+    display: block;
+    border-radius: 10px;
+}
+
+nav ul li ul.drop-down li:hover {
+    box-shadow: 0px -1px 20px 1.0px var(--clr-Basic),
+    0px -1px 20px 1.0px var(--clr-Basic),
+    0px -1px 20px 1.0px var(--clr-Basic);
+}
+
+nav ul li:hover > ul.drop-down {
+    display: block;
+}
+
+nav ul li ul.drop-down li {
+    display: block;
+    padding: 10px;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav ul li ul.drop-down li  span{
+    font-weight: bold;
+    color: var(--clr-black);
+    font-size: var(--p-f-size);
+}
+
+.grid{
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 3fr;  
+}
 #content {
     padding: 20px;
     text-decoration: none;
@@ -15,10 +128,10 @@ body{
 #container h1{
     font-size: var(--main-header-f-size);
     color: var(--clr-Basic);
-    margin-top: -190PX;
+    margin-top: -200px;
 }
 #form-container{
-    margin-top: 100px;
+    height: fit-content;
 }
 form ::placeholder{
     color: var(--clr-Basic);
@@ -49,7 +162,6 @@ form ::placeholder{
 }
 
 form input{
-    max-width: calc(width(container)-20px);
     cursor: pointer;
     padding: 7px;
     width:200px;
@@ -89,15 +201,22 @@ form input:focus{
 #Email-massege input{
     width:422px;
 }
-
-#massege-container input{
-    padding-top: 40px;
+#message{
+    cursor: pointer;
+    border-radius: 10px;
+    background: rgba(255,255,255,0);
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    border: 1px solid rgba(255,255,255,0);
+    border: 1px solid rgba(242,245,246,0.025);
+    box-shadow: 0px -1px 20px 1.0px var(--clr-Basic ),
+    0px -1px 20px 1.0px var(--clr-black ),
+    0px -1px 20px 1.0px var(--clr-Basic );
 }
 
-#massege-container input::placeholder {
-    position: absolute;
-    top: 0px;
-}
+
+
+
 form  button{
     cursor: pointer;
     padding: 8px 30px;

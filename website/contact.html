@@ -9,8 +9,95 @@
 <body>
     <div>
         <header>
-            <nav>
-
+            <nav id="navbar">
+                <ul class="grid">
+                    <li>
+                        <a href="./main.html" id="logo"> 
+                            <img  src="../assets/images/atal2.png" alt="logo"></a>
+                        </li>
+                    <li>
+                        <a href="./main.html">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Menus</span>
+                        <ul class="drop-down">
+                            <li>
+                                <a href="#">
+                                    <span>Pizza menu</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Pastas menu</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Dessert menu</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Book</span>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="AboutUs.html">
+                            <span>Our story</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" >
+                            <span>Account</span>
+                            <img src="../assets/icons/user_icon.svg" alt="">
+                        </a>
+                        <ul class="drop-down">
+                            <li>
+                                <a href="./log_in.html">
+                                    <span>Login</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./register.html">
+                                    <span>Register</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Others</span>
+                        <ul class="drop-down">
+                            <li>
+                                <a href="#">
+                                    <span>Gallery</span>
+                                </a>
+                            </li>
+                           
+                            <li>
+                                <a href="feed-back.html">
+                                    <span>Rate Us</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html">
+                                    <span>Contact Us</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <span></span> 
+                        </a>
+                    </li>
+                </ul>
             </nav>
         </header>
     </div>
@@ -19,26 +106,18 @@
             <div id="container">
                 <h1>Contact Us</h1>
                 <div id="form-container">
-                    <form action="">
+                    <form>
                         <section>
                             <div class="name-group">
                                 <input type="text" placeholder="First Name" required>
                                 <input type="text" placeholder="Last Name"required>
                             </div>
-                        </section>
-                        <section>
                             <div id="Email-massege">
                                 <input type="email"  placeholder="Work-mail" name="email">
-                                
-                                
-                                <div id="massege-container">
-                                    <input type="text"placeholder="massege"re>
-                                </div>
+                            <textarea name="message" id="message" cols="58" rows="5" placeholder="Message"></textarea>
                             </div>
+                            <button id="send" type="submit"><a href="./thank-page.css">Send</a></button>
                         </section>
-                    <section>
-                        <button id="send" type="submit"><a href="">Send</a></button>
-                    </section>
                     </form>
                 </div>
             </div>

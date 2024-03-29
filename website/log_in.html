@@ -8,70 +8,123 @@
 </head>
 <body>
     <section>
-        <div class="content">
-            <header>
-                    <nav>
-                        <ul class="grid">
-                            <li>
-                                <a href="./main.html" id="logo"> 
-                                    <img width="10px" src="../assets/images/atal2.png" alt="logo"></a>
+        <header>
+            <nav class="navHeader">
+                <div id="hamburger">
+                    <div id="burggerIcon"><img src="../assets/icons/menu_icon.svg" alt=""></div>
+                    <ul class="grid">
+                        <li>
+                            <a href="./main.html" id="logo"> 
+                                <img  src="../assets/images/atal2.png" alt="logo"></a>
+                            </li>
+                        <li>
+                            <a href="./main.html">
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Menus</span>
+                            <ul class="drop-down">
+                                <li>
+                                    <a href="#">
+                                        <span>Pizza menu</span>
+                                    </a>
                                 </li>
-                            <li>
-                                <a href="./main.html">
-                                    <span>Home</span>
-                                    <img src="../assets/icons/house-solid (1).svg" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="AboutUs.html">
-                                    <span>About Us</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" >
-                                    <img src="../assets/icons/user_icon.svg" alt="">
-                                </a>
-                                <ul class="drop-down">
-                                    <li><a href="./log_in.html"><span>Login</span></a></li>
-                                    <li><a href="./register.html"><span>Register</span></a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">
-                                <span>Contact Us</span> 
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </header>
-                <main>
-                    <div id="container">
-                        <div id="login-container">
-
-                            <h1 id="Login">Login</h1>
-                            <form action="">
-                                <div class="input-group">
-                                    <input type="text" placeholder="Username"required>
-                                </div>
-                                <div class="input-group">
-                                    <input type="password" placeholder="password" required>
-                                </div>
-                                <div id="Cl-Lo-wrapper">
-                                    <button class="btn-Cl-Lo" type="submit">Login </button>
-                                    <button class="btn-Cl-Lo" type="reset">clear </button>
-                                </div>
-                                <div id="remember">
-                                    <input type="checkbox" id="remember-me">
-                                    <label for="remember-me">Remember me</label>
-                                </div>
-                            </form>
-                            <div id="signUp-link">
-                                <p>Don't have an account? <a href="./register.html" id="signUpBtn-link">Sign Up</a></p>
-                            </div>
-                        </div>
+                                <li>
+                                    <a href="#">
+                                        <span>Pastas menu</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Dessert menu</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Book</span>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="AboutUs.html">
+                                <span>Our story</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" >
+                                <span>Account</span>
+                            </a>
+                            <ul class="drop-down">
+                                <li>
+                                    <a href="./log_in.html">
+                                        <span>Login</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./register.html">
+                                        <span>Register</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Others</span>
+                            <ul class="drop-down">
+                                <li>
+                                    <a href="#">
+                                        <span>Gallery</span>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="feed-back.html">
+                                        <span>Rate Us</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">
+                                        <span>Contact Us</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                </div>
+            </nav>
+        </header>
+    </section>
+    <main>
+        <div class="wrapper">
+            <div class="form-box">
+                <h2>Login</h2>
+                <form action="">
+                    <div class="input-box">
+                        <span class="icon"></span>
+                        <input type="email"  required>
+                        <label for="">Email</label>
                     </div>
-                </main>
-            </section>
+                    <div class="input-box">
+                        <span class="icon"></span>
+                        <input type="password"  required>
+                        <label for="">Password</label>
+                    </div>
+                    <div class="remember">
+                        <label for=""><input type="checkbox"> Remember me</label>
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <button type="reset" class=" btn">Clear</button>
+                    <div class="Login-register">
+                        <p>Don't have an account</p>
+                        <a href="./register.html" class="register-link">Register</a>
+                    </div>
+                </form>
+            </div>
         </div>
+    </main>
 </body>
 </html>

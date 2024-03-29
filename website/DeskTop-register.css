@@ -1,9 +1,4 @@
 body{
-background-image: url('../assets/images/register_box.jpg');
-background-repeat: no-repeat;
-background-size: 100% 100%;
-background-size: cover;
-
    background-color: var(--clr-black);
 }
 
@@ -113,136 +108,23 @@ nav ul li ul.drop-down li  span{
     
 
 
-#container  {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+form {
+    width:300px;
+    height: 600px; 
 }
-#Register{
-    font-size: var(--header-f-size);
-}
-#Register-container {
-    padding: 60px;
-    padding-top: 10px;
-    margin-top:70vh;
-    width: 400px;
-    height: 650px;
-    border-radius: 10px;
-    background-color: var(--clr-black);
-    box-shadow: 0px -1px 20px 1.0px var(--clr-Basic ),
-    0px -1px 20px 1.0px var(--clr-black ),
-    0px -1px 20px 1.0px var(--clr-Basic );
-}
-
-#Register{
-    text-align: center;
-    color: var(--clr-Basic );
-    font-weight: bold;
-    font-size:  var(--main-header-f-size);
-    
-}
-.input-group input{
+form input ,textarea{
+    display: block;
     width: 70%;
-    padding: 7px;
-    margin-top: 30px;
-    margin-left: 50px;
-    box-shadow: 0px -1px 20px 1.0px var(--clr-Basic ),
-    0px -1px 20px 1.0px var(--clr-black),
-    0px -1px 20px 1.0px var(--clr-Basic );
-    border-radius: 5px;
-    background: rgba(255,255,255,0);
-    -webkit-backdrop-filter: blur(1px);
-    backdrop-filter: blur(1px);
-    border: 1px solid rgba(255,255,255,0);
-    border: 1px solid rgba(242,245,246,0.025);
+    padding: 10px 25px;
+    margin: 10px  50%;
+    border: double 3px var(--clr-black);
+    background-color: #e3e2dd;
 }
-.input-group :hover{
-    cursor: pointer;
-    box-shadow: 0px -1px 20px 1.0px var(--clr-hover-list),
-    0px -1px 20px 1.0px var(--clr-hover-list),
-    0px -1px 20px 1.0px var(--clr-hover-list);
-}
-.input-group :focus{
-    cursor: pointer;
-    box-shadow: 0px -1px 20px 1.0px var(--clr-hover-list),
-    0px -1px 20px 1.0px var(--clr-hover-list),
-    0px -1px 20px 1.0px var(--clr-hover-list);
+#Register-container{
     
-}
-#Birth-date {
-    padding-top: 30px;
-}
-#Birth-date input{
-    margin-top:  -25px;
-    padding-top: 40px;
-}
-#Birth-date label{
-    color: var(--clr-Basic);
-    margin-left: 140px;
-    font-weight: bolder;
-    font-size: var(--p-f-size);
-    color: var(--clr-Basic);
-    text-decoration:overline underline wavy;
-    
-}
-#Register-container ::-webkit-input-placeholder{
-    color: var(--clr-Basic);
-}
-
-.btn-Cl-Re a {
-    text-decoration: none; 
-    color: var(--clr-Basic);
-}
-#Remember{
-    visibility:hidden;
-    color: var(--clr-Basic);
-}
-#Register-container:focus-within #Remember{
-    visibility: visible;
-    margin-top: 10px;
-    text-align: center;
-    font-weight: bold;
-}
-
-#Cl-Re-wrapper {
-    text-align: center;
-
-}
-#Cl-Re-wrapper{
-    visibility: hidden;
-}
-#Register-container:focus-within #Cl-Re-wrapper{
-    visibility: visible;
-    text-align: center;
-}
-#RegisterBtn{
-    text-decoration: none;
-}
-
-.btn-Cl-Re{
     width: fit-content;
-    height: fit-content;
-    margin-top: 50px;
-    color:var(--clr-Basic);
-    font-size: var(--p-f-size);
-    font-weight: bold;
-    border-radius: 5px;
-    background: rgba(255,255,255,0);
-    -webkit-backdrop-filter: blur(1px);
-    backdrop-filter: blur(1px);
-    border: 1px solid rgba(255,255,255,0);
-    border: 1px solid rgba(242,245,246,0.025);
-    
-}
-.btn-Cl-Re:hover{
-    cursor: pointer;
-    box-shadow:0px -1px 20px 1.0px var(--clr-hover-list),
-    0px -1px 20px 1.0px var(--clr-hover-list),
-    0px -1px 20px 1.0px var(--clr-hover-list);  
-}
-#remember input[type="checkbox"] {
-    margin-right: 500px;
-    border-radius: 20px;
+    height: 90vh;
+    border: double 5px var(--clr-Basic);
+    margin: auto;
 }
 

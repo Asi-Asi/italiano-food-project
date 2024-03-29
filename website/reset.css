@@ -19,6 +19,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font-family: 'poppins',sans-serif;
 	vertical-align: baseline;
+	box-sizing: border-box;
 }
 
 body {

@@ -1,0 +1,243 @@
+body{
+    background-color: var(--clr-black);
+    color: var(--clr-Basic);
+}
+#navbar {
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    background: rgba(255, 255, 255, 0);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px); 
+    padding:  3px; 
+}
+#logo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#logo img {
+    width: 90px;
+}
+
+nav ul {
+    list-style: none;
+    background: rgba(255, 255, 255, 0);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    z-index: 999;
+    height: fit-content;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+ nav ul li {
+    display: inline-block;
+    position: relative;
+    font-weight: bolder;
+}
+
+nav ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: var(--clr-Basic);
+    text-decoration: none;
+}
+    
+    
+
+
+nav ul li ul.drop-down {
+    border: 2px solid var(--clr-bronze);
+    width: 100%;
+    background-image: url('../assets/images/italy\ flag_-bg.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:fit-content;
+    background-position:center;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    top: 100%;
+    text-align: center;
+    
+}
+
+nav ul li ul.drop-down li {
+    display: block;
+    border-radius: 10px;
+}
+
+nav ul li ul.drop-down li:hover {
+    box-shadow: 0px -1px 20px 1.0px var(--clr-Basic),
+    0px -1px 20px 1.0px var(--clr-Basic),
+    0px -1px 20px 1.0px var(--clr-Basic);
+}
+
+nav ul li:hover > ul.drop-down {
+    display: block;
+}
+
+nav ul li ul.drop-down li {
+    display: block;
+    padding: 10px;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav ul li ul.drop-down li  span{
+    font-weight: bold;
+    color: var(--clr-black);
+    font-size: var(--p-f-size);
+}
+
+.grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;  
+}
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+#logo img {
+    width: 90px;
+}
+
+nav ul {
+    list-style: none;
+    background: rgba(255, 255, 255, 0);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    height: fit-content;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    font-weight: bolder;
+}
+
+nav ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: var(--clr-Basic);
+    text-decoration: none;
+}
+
+nav ul li ul.drop-down {
+    border: 2px solid var(--clr-bronze);
+    width: 100%;
+    background-image: url('../assets/images/italy\ flag_-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: fit-content;
+    background-position: center;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    top: 100%;
+    text-align: center;
+}
+
+nav ul li ul.drop-down li {
+    display: block;
+    border-radius: 10px;
+}
+
+nav ul li ul.drop-down li:hover {
+    box-shadow: 0px -1px 20px 1.0px var(--clr-Basic),
+    0px -1px 20px 1.0px var(--clr-Basic),
+    0px -1px 20px 1.0px var(--clr-Basic);
+}
+
+nav ul li:hover > ul.drop-down {
+    display: block;
+}
+
+nav ul li ul.drop-down li {
+    display: block;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li ul.drop-down li span {
+    font-weight: bold;
+    color: var(--clr-black);
+    font-size: var(--p-f-size);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr;  
+}
+
+h1 {
+    font-size: var(--main-header-f-size)!important;
+    margin-top: 10%!important;
+    text-align: center;
+    z-index: 1;
+}
+
+main img {
+    display: flex;
+    width: 60vw;
+    height: 100vh;
+    transform: translate(35%, 30%);
+    opacity: 0.5;
+    border: double 10px var(--clr-Basic);
+    z-index: -1;
+}
+.container {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    width: 60vw;
+    margin-left: 20%!important;
+}
+.text{
+    
+    font-size: var(--header-f-size)!important;
+    border-right: 5px solid var(--clr-hover-list);
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 2s steps(42),
+        cursor 4s step-end infinite alternate;
+        
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes cursor {
+    50% { border-color: transparent; }
+}
+
+#last-lines{
+    position: absolute;
+    font-size: var(--header-f-size);
+    margin-top: 93px !important;
+    margin-left: 22% !important;    
+}
+
