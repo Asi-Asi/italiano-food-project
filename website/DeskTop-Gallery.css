@@ -1,0 +1,38 @@
+
+#gallery {
+    background: url("./img/offer-background.jpg") center center/cover;
+    padding: 8rem 0 6rem;
+  }
+  #gallery h2 {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  #gallery .img-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  #gallery .img-gallery img {
+    margin: 20px;
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+    opacity: 0.8;
+  }
+  
+  #gallery .img-gallery img:hover {
+    opacity: 1;
+  }
+  #footer {
+    background-color: #383848;
+    text-align: center;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 14px;
+  }
+

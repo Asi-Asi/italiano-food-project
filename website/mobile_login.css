@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('./reset.css');
+@import url('./ver.css');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background-image: url('../assets/images/bg_5.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #00440a;
+    padding: 40px;
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0px -1px 20px 1.0px #238386;
+}
+
+.h {
+    text-align: center;
+    color: #fafafa;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+}
+
+.remember input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.signUp-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.signUpBtn-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signUpBtn-link:hover {
+    text-decoration: underline;
+}
