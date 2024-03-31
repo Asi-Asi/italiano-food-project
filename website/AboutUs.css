@@ -10,10 +10,13 @@
         display: block;
         filter: invert(100%);
     }
+
+    #burggerIcon:hover +.grid{
+        display: flex;
+    }
     
     #hamburger {
-        display: none;
-        position: fixed;
+        position: relative;
     }
 
     .navHeader {
@@ -55,19 +58,22 @@
 @media only screen and (max-width: 325px) {
     #burggerIcon {
         display: block;
+        filter: invert(100%);
+    }
+
+    #burggerIcon:hover +.grid{
+        display: flex;
     }
     
     #hamburger {
-        display: none;
-        align-items: right !important;
+        position: relative;
     }
-
     .navHeader {
         padding: 20px 0;
     }
 
     .grid {
-        display: block;
+        display: none;
     }
 
     .grid-col {
