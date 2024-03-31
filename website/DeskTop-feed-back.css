@@ -1,217 +1,256 @@
 body{
-    background-image:url('../assets/images/form_bg.jpg');
-    background-repeat: no-repeat; 
-    background-size:100% 100%;
-    background-position:0 30%;
-    background-attachment: fixed;  
+    background-color: var(--clr-black);
 }
 
 
-#logo img {
-    width: 90px;
-}
-
-nav ul {
-    list-style: none;
-    background: rgba(255, 255, 255, 0);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    position: sticky;
-    z-index: 999;
-    height: fit-content;
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-}
-
- nav ul li {
-    display: inline-block;
-    position: relative;
-    font-weight: bolder;
-}
-
-nav ul li a {
-    display: block;
-    padding: 20px 25px;
-    color: var(--clr-Basic);
-    text-decoration: none;
-}
-    
-    
 
 
-nav ul li ul.drop-down {
-    border: 2px solid var(--clr-bronze);
+header{
+    position: fixed;
     width: 100%;
-    background-image: url('../assets/images/italy\ flag_-bg.jpg');
-    background-size:cover;
-    background-repeat: no-repeat;
-    height:fit-content;
-    background-position:center;
-    border-radius: 10px;
-    position: absolute;
+    display: flex;
+    padding: 20px 100px;
+}
+.navHeader {
+    width: 100%;
+    height: 30vh;
+    position: fixed;
+    top: 0;
     z-index: 999;
-    display: none;
-    top: 100%;
-    text-align: center;
+    display: flex;
+    align-items: center !important;
+    overflow: hidden;
+    border-bottom: 3px solid var(--clr-Basic);
+}
+#logo img{
+    width: 90px;
+    margin-top: -25px;
     
 }
-
-nav ul li ul.drop-down li {
-    display: block;
-    border-radius: 10px;
-}
-
-nav ul li ul.drop-down li:hover {
-    box-shadow: 0px -1px 20px 1.0px var(--clr-Basic),
-    0px -1px 20px 1.0px var(--clr-Basic),
-    0px -1px 20px 1.0px var(--clr-Basic);
-}
-
-nav ul li:hover > ul.drop-down {
-    display: block;
-}
-
-nav ul li ul.drop-down li {
-    display: block;
-    padding: 10px;
-}
-nav ul {
+#hamburger {
     display: flex;
-    justify-content: space-between;
+    font-size: 1.2em;
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+    cursor: pointer;
+    flex-grow: 0.99;
     align-items: center;
 }
 
 
-nav ul li ul.drop-down li  span{
-    font-weight: bold;
-    color: var(--clr-black);
-    font-size: var(--p-f-size);
+#burggerIcon{
+    display: none;
 }
+
+ul {
+    list-style: none;
+    list-style-type: none;
+    display: flex;
+    flex-grow: 0.99;
+}
+ul li {
+    display: inline-block;
+    position: relative;
+}
+ul li a {
+    display: block;
+    padding: 20px 25px;
+    text-decoration: none;
+    width: 150px;
+    color: var(--clr-beige);
+    text-align: center;
+    font-size: 1.2em;
+}
+ul li ul.drop-down li{
+    display:static;
+    padding-top: 10px;
+}
+ul li ul.drop-down {
+    width: 100%;
+    top:100%;
+    position:flex;
+    z-index: 999;
+    display: none;
+    background-image: url('../assets/images/italy flag_-bg.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    height:fit-content;
+    border: 2px solid var(--clr-bronze); 
+    padding-bottom: 10px;
+
+    border-radius: 20px; 
+    text-align: center;
+}
+
+ul li a:hover {
+    font-weight: bolder;
+    color: var(--clr-Basic);
+    position:sticky;
+}
+ul li:hover ul.drop-down {
+    display: block;
+}
+a::after{
+    content: "";
+    position: absolute;
+    background-color: var(--clr-Basic);
+    height: 3px;
+    left: 0;
+    bottom: -10px;
+}
+a:hover::after{
+    width: 100%;
+    transition: width 0.3s;
+    
+}
+
 
 .grid{
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr;  
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr  1fr;
+    
 }
+.grid #logo{
+    text-align: left;
+ }
+ .star-container img{
+    display: flex;
+    filter: invert(40%);
+    width: 25px;
+    height: 25px;
 
-#container h1{
-    font-size: var(--main-header-f-size);
-    color: var(--clr-Basic);
-    margin-top: -190PX;
+ }
+section .feed-back-container form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--clr-beige) !important;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-#form-container{
-    margin-top: 100px;
-}
-form ::placeholder{
-    color: var(--clr-Basic);
-    font-size: var(--p-f-size);
-
-}
-#container{
-    background-image: url('../assets/images/rate_us.jpg');
-    background-position: center ;
-    background-size: cover;
-    background-attachment:scroll; 
-    background-attachment: flex;
-    cursor: default;
-    margin-top: 20vh;
-    color:var(Basic);
+ section h1{
+    color: var(--clr-beige);
+    font-size: 2em !important;
     text-align: center;
-    border: double 5px var(--clr-green);
-    width: 50%;
-    height: calc(100vh - 60vh);
-    margin-left: 26%;
-    padding-top: 15%;
-    border-radius: 10px;
-    box-shadow: 0px -1px 20px 1.0px var(--clr-Basic ),
-    0px -1px 20px 1.0px var(--clr-black ),
-    0px -1px 20px 1.0px var(--clr-Basic );
-    margin-bottom: 200px;
+    margin-top: 30vh !important;
+    margin-left: -30vw !important;
+    margin: 0 auto;
+ }
 
-}
-
-form input{
-    max-width: calc(width(container)-20px);
-    cursor: pointer;
-    padding: 7px;
-    width:200px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    background: rgba(255,255,255,0);
+ .feed-back-container .star-container{
+    display: flex;
+    background: #f1b04e;
+    background: -webkit-radial-gradient(circle,#f1b04e   0%, #000000 100%);
+    background: radial-gradient(circle, #f1b04e  0%, #000000  100%);
+    width: 45vw;
+    height: 5vh;
+    justify-content: center;
+    padding: 0 20px;
+    margin-left: 25%;
+    margin-top: -0.5vh !important;
+    margin: 0 auto;
+    
+    border: rgba(255,255,255,0.1);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    margin-top: 30vh ;
+    
+ }
+ form {
+    display: flex;
+    width:45%;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 27.5% !important;
+    background: #f1b04e;
+    background: -webkit-radial-gradient(circle,#f1b04e   0%, #000000 100%);
+    background: radial-gradient(circle, #f1b04e  0%, #000000  100%);
+    padding: 20px !important;
+    margin: 0 auto;
+    font-size: var(--p-f-size) !important;
+    font-weight: bold;
+    border-bottom:5px solid rgba(20,20,20,0.5) !important;
+    border-top:5px solid rgba(20,20,20,0.5) !important;
+ }
+ form input{
+    font-size: 1em;
+    color: var(--clr-Basic);
+    border-bottom: 5px solid rgba(20,20,20,0.5) !important;
+    text-align: center;
+    background: rgba(255,255,255,0) !important;
     -webkit-backdrop-filter: blur(1px);
     backdrop-filter: blur(1px);
-    border: 1px solid rgba(255,255,255,0);
-    border: 1px solid rgba(242,245,246,0.025);
-    box-shadow: 0px -1px 20px 1.0px var(--clr-Basic ),
-    0px -1px 20px 1.0px var(--clr-black ),
-    0px -1px 20px 1.0px var(--clr-Basic );
+    border: none;
+    cursor: pointer;
 }
-
-
-
-form input:hover{
-    box-shadow: 0px -1px 20px 1.0px var(--clr-hover-list),
-    0px -1px 20px 1.0px var(--clr-hover-list),
-    0px -1px 20px 1.0px var(--clr-hover-list);
-    background: rgba(255,255,255,0.2);
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
-    
+form input::placeholder{
+    text-align:right;
+    color: var(--clr-Basic);
+    font-size: 1em;
+    text-align: center;
 }
 form input:focus{
-    box-shadow: 0px -1px 20px 1.0px var(--clr-hover-list),
-    0px -1px 20px 1.0px var(--clr-hover-list),
-    0px -1px 20px 1.0px var(--clr-hover-list);
-    background: rgba(255,255,255,0.2);
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
-    
+    outline: none;
+
 }
 
-#Email-massege input{
-    width:422px;
-}
 
-#massege-container input{
-    padding-top: 40px;
-}
-
-#massege-container input::placeholder {
-    position: absolute;
-    top: 0px;
-}
-form  button{
-    cursor: pointer;
-    width:217px;
-    padding: 8px 30px;
-    border-radius: 10px;
-    font-size: var(--p-f-size);
+form textarea{
     background: rgba(255,255,255,0);
     -webkit-backdrop-filter: blur(1px);
     backdrop-filter: blur(1px);
-    border: 1px solid rgba(255,255,255,0);
-    border: 1px solid rgba(242,245,246,0.025);
-    box-shadow: 0px -1px 20px 1.0px var(--clr-Basic ),
-    0px -1px 20px 1.0px var(--clr-black ),
-    0px -1px 20px 1.0px var(--clr-Basic );
-    
-}
-form input ::placeholder{
-    color: vara(--clr-Basic);
-    font-weight: bolder;
-}
-form button a{
-
-    text-decoration: none;
+    text-align: center;
     color: var(--clr-Basic);
-    font-weight: bolder;
+    font-size: 1em;
+    border-bottom: 5px solid rgba(20,20,20,0.5) !important;
+    border: none;
+    cursor: pointer;
+
+
 }
 
-form button:hover{
-    box-shadow: 0px -1px 20px 1.0px var(--clr-hover-list),
-    0px -1px 20px 1.0px var(--clr-hover-list),
-    0px -1px 20px 1.0px var(--clr-hover-list);    
-    background: rgba(255,255,255,0.2);
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
+form textarea::placeholder{
+    color: var(--clr-Basic);
+    font-size: 1em;
+    text-align: center;
+}
+
+form #btn-Cl{
+    font-size: 1em;
+    border: none !important;
+    color: var(--clr-beige);
+    background-color: var(--clr-black)!important;
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+form #btn-Cl:hover{
+    background-color: var(--clr-Basic)!important;
+    font-weight: bolder;
+    font-size: 1.1em;
+}
+form #btn-Se{
+    font-size: 1em;
+    border: none !important;
+    color: var(--clr-beige);
+    background-color: var(--clr-black)!important;
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 50%;
+    margin-top: -38px;
+}
+form #btn-Se:hover{
+    background-color: var(--clr-Basic)!important;
+    font-weight: bolder;
+    font-size: 1.1em;
 }

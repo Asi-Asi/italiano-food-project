@@ -2,129 +2,217 @@ body{
    background-color: var(--clr-black);
 }
 
-.content {
-    padding: 20px;
-}
-#navbar {
-    position: fixed; 
-    top: 0; 
-    width: 100%; 
-    background: rgba(255, 255, 255, 0);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px); 
-    padding:  3px; 
-}
-#logo {
-    display: flex;
-    justify-content: flex-start;
-}
 
-#logo img {
-    width: 90px;
-}
-
-nav ul {
-    list-style: none;
-    background: rgba(255, 255, 255, 0);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    position: sticky;
-    z-index: 999;
-    height: fit-content;
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-}
-
- nav ul li {
-    display: inline-block;
-    position: relative;
-    font-weight: bolder;
-}
-
-nav ul li a {
-    display: block;
-    padding: 20px 25px;
-    color: var(--clr-Basic);
-    text-decoration: none;
-}
-    
-    
-
-
-nav ul li ul.drop-down {
-    border: 2px solid var(--clr-bronze);
+header{
+    position: fixed;
     width: 100%;
-    background-image: url('../assets/images/italy\ flag_-bg.jpg');
-    background-size:cover;
-    background-repeat: no-repeat;
-    height:fit-content;
-    background-position:center;
-    border-radius: 10px;
-    position: absolute;
+    display: flex;
+    padding: 20px 100px;
+}
+.navHeader {
+    width: 100%;
+    height: 30vh;
+    position: fixed;
+    top: 0;
     z-index: 999;
-    display: none;
-    top: 100%;
-    text-align: center;
+    display: flex;
+    align-items: center !important;
+    overflow: hidden;
+    border-bottom: 3px solid var(--clr-Basic);
+}
+#logo img{
+    width: 90px;
+    margin-top: -25px;
     
 }
-
-nav ul li ul.drop-down li {
-    display: block;
-    border-radius: 10px;
-}
-
-nav ul li ul.drop-down li:hover {
-    box-shadow: 0px -1px 20px 1.0px var(--clr-Basic),
-    0px -1px 20px 1.0px var(--clr-Basic),
-    0px -1px 20px 1.0px var(--clr-Basic);
-}
-
-nav ul li:hover > ul.drop-down {
-    display: block;
-}
-
-nav ul li ul.drop-down li {
-    display: block;
-    padding: 10px;
-}
-nav ul {
+#hamburger {
     display: flex;
-    justify-content: space-between;
+    font-size: 1.2em;
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+    cursor: pointer;
+    flex-grow: 0.99;
     align-items: center;
 }
 
 
-nav ul li ul.drop-down li  span{
-    font-weight: bold;
-    color: var(--clr-black);
-    font-size: var(--p-f-size);
+#burggerIcon{
+    display: none;
 }
+
+ul {
+    list-style: none;
+    list-style-type: none;
+    display: flex;
+    flex-grow: 0.99;
+}
+ul li {
+    display: inline-block;
+    position: relative;
+}
+ul li a {
+    display: block;
+    padding: 20px 25px;
+    text-decoration: none;
+    width: 150px;
+    color: var(--clr-beige);
+    text-align: center;
+    font-size: 1.2em;
+}
+ul li ul.drop-down li{
+    display:static;
+    padding-top: 10px;
+}
+ul li ul.drop-down {
+    width: 100%;
+    top:100%;
+    position:flex;
+    z-index: 999;
+    display: none;
+    background-image: url('../assets/images/italy flag_-bg.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    height:fit-content;
+    border: 2px solid var(--clr-bronze); 
+    padding-bottom: 10px;
+
+    border-radius: 20px; 
+    text-align: center;
+}
+
+ul li a:hover {
+    font-weight: bolder;
+    color: var(--clr-Basic);
+    position:sticky;
+}
+ul li:hover ul.drop-down {
+    display: block;
+}
+a::after{
+    content: "";
+    position: absolute;
+    background-color: var(--clr-Basic);
+    height: 3px;
+    left: 0;
+    bottom: -10px;
+}
+a:hover::after{
+    width: 100%;
+    transition: width 0.3s;
+    
+}
+
 
 .grid{
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr;  
-}
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr  1fr;
     
-
-
-form {
-    width:300px;
-    height: 600px; 
 }
-form input ,textarea{
-    display: block;
-    width: 70%;
-    padding: 10px 25px;
-    margin: 10px  50%;
-    border: double 3px var(--clr-black);
-    background-color: #e3e2dd;
-}
-#Register-container{
+.grid #logo{
+    text-align: left;
+ }
     
+form h1{
+    font-size: var(--main-header-f-size)!important;
+    text-align: center;
+    margin-bottom: 5vh !important;
+    margin-top: 5vh !important;
+    color: var(--clr-Basic);
+    font-weight: bolder;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
     width: fit-content;
-    height: 90vh;
-    border: double 5px var(--clr-Basic);
-    margin: auto;
+    border-radius: 20px;
+    height: 150vh;
+    width: 600px;
+    color: var(--clr-balck);
+    background: #693103;
+    background: -webkit-radial-gradient(circle, #693103 0%, #141414 100%);
+    background: radial-gradient(circle, #f1b04e 0%, #141414 100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 30px 50px;
+    border: 5px solid var(--clr-Basic) !important;
+    transform: translate(-50%, -10%);
+    z-index: -1;
+    cursor: default;
 }
+
+form input{
+    border: none;
+    outline: none;
+    display: flex;
+    font-size: 1em;
+    font-weight: 550;
+    Position: relative;
+    height: 2em;
+    border-bottom: 2px solid var(--clr-black)!important;
+    width: 65%;
+    padding: 5px;
+    margin-bottom: 20px ;
+    border-radius: 10px;
+    border: 3px solid var(--clr-beige);
+    background: #000000;
+    background: -webkit-radial-gradient(circle, #000000 0%, #f1b04e 100%);
+    background: radial-gradient(circle, #000000 0%, #f1b04e 100%);
+    cursor: pointer;
+    color: var(--clr-Basic) !important;
+    font-size: 1em !important;
+}
+form input:hover{
+    background: rgba(255,255,255,0.1);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+}
+form input:focus{
+    outline: none;
+    background: rgba(255,255,255,0.1);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+}
+form  label{
+    font-size: var(--header-f-size);
+    font-weight: 550;
+    color: var(--clr-Basic);
+}
+form input:focus ~ label,
+form input:valid ~ label{
+    top: -5px;
+}
+button{
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+    background: var(--clr-black);
+    color:var(--clr-beige);
+}
+button:hover{
+   background-color: var(--clr-beige) !important;
+   color: var(--clr-black);
+   font-size: 0.9em;
+    font-weight: bolder !important;
+    cursor: pointer;
+}
+
+button a{
+    text-decoration: none;
+    font-size: var(--header-f-size) !important;
+    color: var(--clr-balck);
+    font-weight: bold;
+}
+
+
 

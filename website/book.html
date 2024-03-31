@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="feed-back.css">
-    <title>contact-us</title>
+    <link rel="stylesheet" href="./book.css">
+    <title>book-page</title>
 </head>
 <body>
     <header>
@@ -95,52 +95,25 @@
             </div>
         </nav>
     </header>
-    <section class="feed-back-container">
-        <h1> Feedback</h1>
-        <div class="star-container">
-            <img src="../assets/icons/211930_star_icon.png" alt="">
-            <img src="../assets/icons/211930_star_icon.png" alt="">
-            <img src="../assets/icons/211930_star_icon.png" alt="">
-            <img src="../assets/icons/211930_star_icon.png" alt="">
-            <img src="../assets/icons/211930_star_icon.png" alt="">
-        </div>
+    <section>
+        <h1>Dine in Style: Secure Your Spot at Our Table!</h1>
         <form>
-            <input type="number" id="quantity" name="quantity" min="1" max="5" placeholder="Rate us from(1-5)">
-            <textarea name="message" id="message" cols="40" rows="5" placeholder="Describe your experience"></textarea>
-            <input id="btn-Cl" type="reset" value="Clear">
-            <input id="btn-Se" type="submit" value="Send">
+            <label>Full name</label>
+            <input type="text" id="full-name" placeholder="Full name" required>
+            <label>Email</label>
+            <input type="tel" id="phone-input" placeholder="Phone Number" required>
+            <label for="quantity">How many guests are you bringing?</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="14" placeholder="Guests">
+            <label for="date">Choose a date for your reservation:</label>
+            <input type="date" id="date" name="date">
+            <label for="time">Choose a time for your reservation:</label>
+            <input type="time" id="time" placeholder="Time" required>
+
+
         </form>
-
     </section>
-   
-        <!-- <footer>
-            <div id="address">
-                <h2><i><b>TASTE OF ITALY RESTAURANT</b></i></h2>
-                <p><b>
-                    123 Via Roma<br>
-                    Bella Vista<br>
-                      <i>ITALY</i>
-                </b></p>
-                <p><b><i>Monday: 12:00 PM - 10:00 PM<br>
-                    Tuesday: 12:00 PM - 10:00 PM<br>
-                    Wednesday: 12:00 PM - 10:00 PM<br>
-                    Thursday: 12:00 PM - 10:00 PM<br>
-                    Friday: 12:00 PM - 11:00 PM<br>
-                    Saturday: 12:00 PM - 11:00 PM<br>
-                    Sunday: Closed</i></b></p>
-            <ul class="icons">
-                <li><a href="#"><img src="../assets/icons/facebook_ icon.png" alt=""></a></li>
-                <li><a href="#"><img src="..//assets/icons/instagram_icon.png" alt=""></a></li>
-                <li><a href="#"><img src="../assets/icons/twitter icon.png" alt=""></a></li>
-            </ul>
-            </div>
 
-                
-                <p><b>&copy; 2021 Taste of Italy. All rights reserved.</b></p>
-            </div>
-         </footer> -->
-    </div>
-    
+
     
 </body>
 </html>

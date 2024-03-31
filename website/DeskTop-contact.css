@@ -21,269 +21,210 @@ p{
 h{
     margin-top: 20px;
 }
-#navbar {
-    position: fixed; 
-    top: 0; 
-    width: 100%; 
-    background: rgba(255, 255, 255, 0);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px); 
-    padding:  3px; 
-}
-#logo {
-    display: flex;
-    justify-content: flex-start;
-}
-
-#logo img {
-    width: 90px;
-}
-
-nav ul {
-    list-style: none;
-    background: rgba(255, 255, 255, 0);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    position: sticky;
-    z-index: 999;
-    height: fit-content;
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-}
-
- nav ul li {
-    display: inline-block;
-    position: relative;
-    font-weight: bolder;
-}
-
-nav ul li a {
-    display: block;
-    padding: 20px 25px;
-    color: var(--clr-Basic);
-    text-decoration: none;
-}
-    
-    
-
-
-nav ul li ul.drop-down {
-    border: 2px solid var(--clr-bronze);
+header{
+    position: fixed;
     width: 100%;
-    background-image: url('../assets/images/italy\ flag_-bg.jpg');
-    background-size:cover;
-    background-repeat: no-repeat;
-    height:fit-content;
-    background-position:center;
-    border-radius: 10px;
-    position: absolute;
+    display: flex;
+    padding: 20px 100px;
+}
+.navHeader {
+    width: 100%;
+    height: 30vh;
+    position: fixed;
+    top: 0;
     z-index: 999;
-    display: none;
-    top: 100%;
-    text-align: center;
+    display: flex;
+    align-items: center !important;
+    overflow: hidden;
+    border-bottom: 3px solid var(--clr-Basic);
+}
+#logo img{
+    width: 90px;
+    margin-top: -25px;
     
 }
-
-nav ul li ul.drop-down li {
-    display: block;
-    border-radius: 10px;
-}
-
-nav ul li ul.drop-down li:hover {
-    box-shadow: 0px -1px 20px 1.0px var(--clr-Basic),
-    0px -1px 20px 1.0px var(--clr-Basic),
-    0px -1px 20px 1.0px var(--clr-Basic);
-}
-
-nav ul li:hover > ul.drop-down {
-    display: block;
-}
-
-nav ul li ul.drop-down li {
-    display: block;
-    padding: 10px;
-}
-nav ul {
+#hamburger {
     display: flex;
-    justify-content: space-between;
+    font-size: 1.2em;
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+    cursor: pointer;
+    flex-grow: 0.99;
     align-items: center;
 }
 
 
-nav ul li ul.drop-down li  span{
-    font-weight: bold;
-    color: var(--clr-black);
-    font-size: var(--p-f-size);
+#burggerIcon{
+    display: none;
 }
+
+ul {
+    list-style: none;
+    list-style-type: none;
+    display: flex;
+    flex-grow: 0.99;
+}
+ul li {
+    display: inline-block;
+    position: relative;
+}
+ul li a {
+    display: block;
+    padding: 20px 25px;
+    text-decoration: none;
+    width: 150px;
+    color: var(--clr-beige);
+    text-align: center;
+    font-size: 1.2em;
+}
+ul li ul.drop-down li{
+    display:static;
+    padding-top: 10px;
+}
+ul li ul.drop-down {
+    width: 100%;
+    top:100%;
+    position:flex;
+    z-index: 999;
+    display: none;
+    background-image: url('../assets/images/italy flag_-bg.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    height:fit-content;
+    border: 2px solid var(--clr-bronze); 
+    padding-bottom: 10px;
+
+    border-radius: 20px; 
+    text-align: center;
+}
+
+ul li a:hover {
+    font-weight: bolder;
+    color: var(--clr-Basic);
+    position:sticky;
+}
+ul li:hover ul.drop-down {
+    display: block;
+}
+a::after{
+    content: "";
+    position: absolute;
+    background-color: var(--clr-Basic);
+    height: 3px;
+    left: 0;
+    bottom: -10px;
+}
+a:hover::after{
+    width: 100%;
+    transition: width 0.3s;
+    
+}
+
 
 .grid{
-    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 3fr;  
-}
-#content {
-    padding: 20px;
-    text-decoration: none;
-}
-
-#container h1{
-    font-size: var(--main-header-f-size);
-    color: var(--clr-Basic);
-    margin-top: -200px;
-}
-#form-container{
-    height: fit-content;
-}
-form ::placeholder{
-    color: var(--clr-Basic);
-    font-size: var(--p-f-size);
-
-}
-#container{
-    background-image: url(../assets/images/inside_forms_bg.jpg);
-    background-position: 0 30% ;
-    background-size: cover;
-    background-attachment:scroll; 
-    background-attachment: flex;
-    cursor: default;
-    margin-top: 20vh;
-    color:var(Basic);
-    text-align: center;
-    border: double 5px var(--clr-green);
-    width: 50%;
-    height: calc(100vh - 60vh);
-    margin-left: 26%;
-    padding-top: 15%;
-    border-radius: 10px;
-    box-shadow: 0px -1px 20px 1.0px var(--clr-Basic ),
-    0px -1px 20px 1.0px var(--clr-black ),
-    0px -1px 20px 1.0px var(--clr-Basic );
-    margin-bottom: 200px;
-
-}
-
-form input{
-    cursor: pointer;
-    padding: 7px;
-    width:200px;
-    margin-bottom: 30px;
-    border-radius: 10px;
-    background: rgba(255,255,255,0);
-    -webkit-backdrop-filter: blur(1px);
-    backdrop-filter: blur(1px);
-    border: 1px solid rgba(255,255,255,0);
-    border: 1px solid rgba(242,245,246,0.025);
-    box-shadow: 0px -1px 20px 1.0px var(--clr-Basic ),
-    0px -1px 20px 1.0px var(--clr-black ),
-    0px -1px 20px 1.0px var(--clr-Basic );
-}
-
-
-
-form input:hover{
-    box-shadow: 0px -1px 20px 1.0px var(--clr-hover-list),
-    0px -1px 20px 1.0px var(--clr-hover-list),
-    0px -1px 20px 1.0px var(--clr-hover-list);
-    background: rgba(255,255,255,0.2);
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr  1fr;
     
 }
-form input:focus{
-    box-shadow: 0px -1px 20px 1.0px var(--clr-hover-list),
-    0px -1px 20px 1.0px var(--clr-hover-list),
-    0px -1px 20px 1.0px var(--clr-hover-list);
-    background: rgba(255,255,255,0.2);
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
-    
-}
+.grid #logo{
+    text-align: left;
+ }
 
-#Email-massege input{
-    width:422px;
-}
-#message{
-    cursor: pointer;
-    border-radius: 10px;
-    background: rgba(255,255,255,0);
-    -webkit-backdrop-filter: blur(1px);
-    backdrop-filter: blur(1px);
-    border: 1px solid rgba(255,255,255,0);
-    border: 1px solid rgba(242,245,246,0.025);
-    box-shadow: 0px -1px 20px 1.0px var(--clr-Basic ),
-    0px -1px 20px 1.0px var(--clr-black ),
-    0px -1px 20px 1.0px var(--clr-Basic );
-}
-
-
-
-
-form  button{
-    cursor: pointer;
-    padding: 8px 30px;
-    border-radius: 10px;
-    font-size: var(--p-f-size);
-    background: rgba(255,255,255,0);
-    -webkit-backdrop-filter: blur(1px);
-    backdrop-filter: blur(1px);
-    border: 1px solid rgba(255,255,255,0);
-    border: 1px solid rgba(242,245,246,0.025);
-    box-shadow: 0px -1px 20px 1.0px var(--clr-Basic ),
-    0px -1px 20px 1.0px var(--clr-black ),
-    0px -1px 20px 1.0px var(--clr-Basic );
-    
-}
-form button a{
-    text-decoration: none;
-    color: var(--clr-Basic);
-}
-
-form button:hover{
-    box-shadow: 0px -1px 20px 1.0px var(--clr-hover-list),
-    0px -1px 20px 1.0px var(--clr-hover-list),
-    0px -1px 20px 1.0px var(--clr-hover-list);    
-    background: rgba(255,255,255,0.2);
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
-        
-
-}
-
-footer {
-    position: relative;
-    width: 100%;
-    overflow-y:auto;
-    max-height: calc(100vh - 70vh);
-    bottom:0;
-    background-image: url(../assets/images/footer_background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 50vh;
-    border-top: 5px double var(--clr-green);
-}
-#address{
-    border: double black 5px;
-    text-align: center;
-    color: var(--clr-bronze);
-    margin-top: 20px;
-}
-div+p{
-    color: var(--clr-bronze);
-    text-align: center;
-}
-.icons img{
-    width: 35px;
-    height: auto;
-    margin: 10px;
-
-}
-footer .icons{
-    position: relative;  
+.form-container{
     display: flex;
-    justify-content: center;
-    align-items: center; 
-    margin: 10px 0;
-    flex-wrap: wrap;
-  
+    background: #693103;
+    background: -webkit-radial-gradient(circle, #693103 0%, #141414 100%);
+    background: radial-gradient(circle, #f1b04e 0%, #141414 100%);;
+    width: 150%;
+    height: 90vh;
+    padding: 60px !important;
+    border: 15px solid rgba(255, 255, 255, 0.10) !important;
+    flex-direction: column;
+    text-align: center !important;
+    justify-content: center !important;
+    transform: translate(-70%, 30%);
+    z-index: -999;
+
 }
+.wrapper-form h1{
+    color: var(--clr-Basic);
+    font-size: 2.5em;
+    font-weight: bolder ;
+    text-align: center;
+    position: absolute;
+    z-index: -1;
+    transform: translate(-210%, 300%);
+}
+
+.form-container input{
+    border:  none;
+    color: var(--clr-Basic);
+    font-size: 1em;
+    cursor: pointer;
+    width:75%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 1em;
+    padding-bottom: 5px;
+    margin-bottom: 50px;
+    border-bottom: var(--clr-black) 5px solid;
+    border-radius: 5px;
+    background: rgba(255,255,255,0);
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    z-index: -1;
+
+}
+.form-container input:focus{
+    outline:none;
+}
+.form-container ::placeholder{
+    color: var(--clr-Basic)!important;
+    font-size:  1em ;
+    font-weight: bold;
+}
+.form-container textarea{
+    border:  none;
+    color: var(--clr-Basic);
+    font-size: 1.13em ;
+    font-weight: 550;
+    cursor: pointer;
+    display: block ;
+    width:75%;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom:  3px solid rgba(255, 255, 255, 0.10) !important;
+    border-bottom: var(--clr-black) 5px solid !important;
+    border-radius: 5px;
+    background: rgba(255,255,255,0);
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    z-index: 2;
+
+}
+.form-container textarea:focus{
+    outline:none;
+}
+
+button {
+    width: 25%;
+    padding: 10px;
+    border-radius: 5px;
+    align-items: center;
+    margin: 0 auto; 
+    background: var(--clr-black);
+    font-weight: 550;
+}
+button a{
+    text-decoration: none;
+    color: var(--clr-beige);
+    
+}
+button:hover{
+    background-color: var(--clr-Basic);
+    color: var(--clr-black);
+font-size: 1.14em;}
+
 

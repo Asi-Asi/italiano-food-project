@@ -1,6 +1,6 @@
-body{
+body {
     background-color: var(--clr-black);
-    color: var(--clr-Basic);
+    font-size: var(--p-f-size);
 }
 header{
     position: fixed;
@@ -109,55 +109,14 @@ a:hover::after{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr  1fr;
     
 }
+.grid #logo{
+    text-align: left;
+ }
 
-h1 {
-    font-size: 2em !important;
-    margin-top: 10%!important;
-    -webkit-text-stroke:  var(--clr-bronze) 2px;
-    text-align: center;
-    z-index: 1;
-}
-
-main img {
-    display: flex;
-    width: 60vw;
-    height: 100vh;
-    transform: translate(35%, 30%);
-    opacity: 0.6;
-    border: double 10px var(--clr-Basic) !important;
-    
-}
-.container {
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    width: 60vw;
-    margin-left: 20%!important;
-}
-.text{
-    
-    border-right: 5px solid var(--clr-hover-list);
-    white-space: nowrap;
-    overflow: hidden;
-    animation: 
-        typing 2s steps(42),
-        cursor 4s step-end infinite alternate;
-        
-}
-
-@keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
-}
-
-@keyframes cursor {
-    50% { border-color: transparent; }
-}
-
-#last-lines{
-    position: absolute;
-    font-size: var(--header-f-size);
-    margin-top: 93px !important;
-    margin-left: 22% !important;    
-}
-
+ section  form{
+   display: flex;
+   width: 25%;
+   flex-direction: column;
+   height: fit-content;
+   margin-top: 40vh !important;
+ }

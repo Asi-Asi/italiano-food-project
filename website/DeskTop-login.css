@@ -5,16 +5,22 @@ body{
     min-height: 100vh;
     color: var(--clr-Basic);
 }
+header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    padding: 20px 100px;
+}
 .navHeader {
     width: 100%;
-    height: 35vh;
+    height: 30vh;
     position: fixed;
     top: 0;
-    /* background-color: #fff; */
     z-index: 999;
     display: flex;
-    align-items: center;
+    align-items: center !important;
     overflow: hidden;
+    border-bottom: 3px solid var(--clr-Basic);
 }
 #logo img{
     width: 90px;
@@ -33,7 +39,7 @@ body{
 }
 
 
-#burgerIcon{
+#burggerIcon{
     display: none;
 }
 
@@ -52,13 +58,13 @@ ul li a {
     padding: 20px 25px;
     text-decoration: none;
     width: 150px;
-    color: var(--clr-bronze);
+    color: var(--clr-beige);
     text-align: center;
     font-size: 1.2em;
 }
 ul li ul.drop-down li{
     display:static;
-    padding-top: 15px;
+    padding-top: 10px;
 }
 ul li ul.drop-down {
     width: 100%;
@@ -72,15 +78,32 @@ ul li ul.drop-down {
     background-position:center;
     height:fit-content;
     border: 2px solid var(--clr-bronze); 
+    padding-bottom: 10px;
+
     border-radius: 20px; 
     text-align: center;
 }
 
 ul li a:hover {
     font-weight: bolder;
+    color: var(--clr-Basic);
+    position:sticky;
 }
 ul li:hover ul.drop-down {
     display: block;
+}
+a::after{
+    content: "";
+    position: absolute;
+    background-color: var(--clr-Basic);
+    height: 3px;
+    left: 0;
+    bottom: -10px;
+}
+a:hover::after{
+    width: 100%;
+    transition: width 0.3s;
+    
 }
 
 
@@ -95,18 +118,20 @@ ul li:hover ul.drop-down {
 
  
  .wrapper{
-    position: relative;
-    width: 400px;
-    height: 440px;
-    margin-left: 100%!important;
-    margin-top: 40%!important;
-    border: double 5px var(--clr-Basic)!important;
-    border-radius: 20px;
-    background-image: url('../assets/images/log_in_box.jpg');
-    background-position: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+     position: absolute;
+     width: 400px;
+     height: 440px;
+     margin-left: 33%!important;
+     margin-top: -10vh!important;
+     border: double 5px var(--clr-Basic)!important;
+     border-radius: 20px;
+     background: #693103;
+     background: -webkit-radial-gradient(circle, #693103 0%, #141414 100%);
+     background: radial-gradient(circle, #f1b04e 0%, #141414 100%);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     z-index: 999;
  
  }
 .wrapper .form-box{
@@ -116,6 +141,7 @@ ul li:hover ul.drop-down {
 .form-box h2{
     font-size: var(--main-header-f-size)!important;
     text-align: center;
+    margin-bottom: 10vh;
     cursor: default;
 }
 .form-box p {
@@ -126,7 +152,7 @@ ul li:hover ul.drop-down {
     position: relative;
     width: 100%;
     height: 50px;
-    margin-top: 8px;
+    margin-bottom: 5vh !important;
     border-bottom: 2px solid var(--clr-black)!important;
 }
 .input-box input:hover{
@@ -182,7 +208,6 @@ ul li:hover ul.drop-down {
 .btn{
     width: 45%;
     height: 45px;
-    background-color: var(--clr-black);
     border: none;
     outline: none;
     border-radius: 6px;
@@ -190,6 +215,14 @@ ul li:hover ul.drop-down {
     font-size: 1.2em;
     font-weight: 500;
     color: var(--clr-Basic);
+}
+button{
+    background: var(--clr-black);
+    color:var(--clr-beige) !important;
+}
+button :hover{
+    background: var(--clr-beige);
+    color:var (--clr-Basic);
 }
 .btn:hover{
     font-weight: 600;
@@ -201,15 +234,24 @@ ul li:hover ul.drop-down {
     font-size: 1em;
     color: var(--clr-Basic);
     font-weight:600 ;
-    margin: 25px 10px 0px !important ;
+    margin: 25px 10px 0px  !important ;
 }
 .Login-register a{
+    color: var(--clr-Basic);
     text-decoration: none;
     font-weight: 600;
     margin-left: 190px;
+    border: 3px var(--clr-black) solid;
+    border-radius: 8px;
+    padding: 3px;
 }
 
+
+
 .Login-register a:hover{
+    background: var(--clr-black);
+    color: var(--clr-beige) ;
+    border: var(--clr-Basic) 3px solid;
     text-decoration: underline;
     font-weight: bolder;
 }
