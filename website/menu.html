@@ -9,27 +9,94 @@
     <title>PIZZA MENU</title>
 </head>
 <body>
-    <header>
-        <div id="navbar">
-            <a href="main.html"><img src="./img/logo.png" alt="italian food Logo"></a>
-            <nav role="navigation">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="index1.html">Login</a></li>
-                    <li><a href="index2.html">Register</a></li>
-                </ul>
+        <header>
+            <nav class="navHeader">
+                <div id="hamburger">
+                    <div id="burggerIcon"><img src="../assets/icons/menu_icon.svg" alt=""></div>
+                    <ul class="grid">
+                        <li>
+                            <a href="./main.html" id="logo"> 
+                                <img  src="./images/web-logo.png" alt="logo"></a>
+                            </li>
+                        <li>
+                            <a href="./main.html">
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Menus</span>
+                            <ul class="drop-down">
+                                <li>
+                                    <a href="#">
+                                        <span>Pizza menu</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Pastas menu</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Dessert menu</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="book.html">
+                                        <span>Book</span>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="AboutUs.html">
+                                <span>Our story</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" >
+                                <span>Account</span>
+                            </a>
+                            <ul class="drop-down">
+                                <li>
+                                    <a href="./log_in.html">
+                                        <span>Login</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./register.html">
+                                        <span>Register</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Others</span>
+                            <ul class="drop-down">
+                                <li>
+                                    <a href="#">
+                                        <span>Gallery</span>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="feed-back.html">
+                                        <span>Rate Us</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">
+                                        <span>Contact Us</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                </div>
             </nav>
-        </div>
-        <div class="content">
-            <h1>Welcome To <span class="primary-text"> Italiano</span> Restaurant</h1>
-            <p>Here you can find Most delicacies italian food in the world</p>
-            <a href="#menu2" class="btn btn-primary">open menu</a>
-        </div>
-    </header>
+        </header>
             <section id="menu2">
             <div class="container">
                 <div class="title">
@@ -125,13 +192,10 @@
                         </div>
                     </div>
                 </div>
-                <button class="btn btn-third"><a href="menu2.html">open pasta menu</a></button>
-                <button class="btn btn-forth"><a href="menu3.html">open salad menu</a></button>
-                <button class="btn btn-five"><a href="menu4.html">open drink menu</a></button>
             </div>
-        </section>
+            </section>
         <footer id="footer">
-            <p>Copyright &copy; 2024 All rights reserved | made by <b> <a>ammar & ahmad</a>
+            <p>Copyright &copy; 2024 All rights reserved | made by <b> <a>ammar & ahmad</a></p>
         </footer>
 </body>
 </html>
