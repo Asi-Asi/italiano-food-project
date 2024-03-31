@@ -50,7 +50,7 @@ ul {
 }
 
 .primary-text {
-  color: #e4b95b;
+  color: var(--clr-);
 }
 header {
   height: 100vh;

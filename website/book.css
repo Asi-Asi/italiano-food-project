@@ -1,3 +1,59 @@
 @import url('./reset.css');
 @import url('ver.css');
 @import url('DeskTop-book.css');
+.grid{
+    display: grid;
+}
+
+/* Default styles */
+
+/* Add your default styles here */
+
+/* Media query for screens up to 650px */
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 10px; /* Reduce padding for header */
+    }
+
+    .navHeader {
+        height: auto; /* Adjust height of navigation bar */
+    }
+
+    .navHeader ul.grid {
+        flex-direction: column; /* Change navigation links to column layout */
+        align-items: center; /* Center align navigation links */
+        padding-top: 10px; /* Add padding to top of navigation links */
+    }
+
+    .navHeader ul.grid li {
+        margin-bottom: 10px; /* Add margin between navigation links */
+    }
+
+    .navHeader ul.grid li a {
+        width: auto; /* Remove fixed width for navigation links */
+    }
+
+    #logo img {
+        width: 70px; /* Decrease logo size */
+        margin-top: 0; /* Remove negative margin */
+    }
+
+    h1 {
+        font-size: 24px; /* Decrease font size of heading */
+        width: auto; /* Adjust width of heading */
+        margin-top: 20px; /* Add margin to top of heading */
+        margin-left:10vw !important;
+        margin-right: 10vw !important;
+    }
+
+    form {
+        width: auto; /* Adjust width of form */
+        margin-left:10vw !important;
+        margin-right: 10vw !important; /* Center align form horizontally */
+        
+    }
+
+    form input {
+        width: 100%; /* Make inputs full width */
+    }
+}

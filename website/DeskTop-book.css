@@ -112,6 +112,32 @@ a:hover::after{
 .grid #logo{
     text-align: left;
  }
+ header {
+    padding: 10px; /* Reduce padding for header */
+}
+
+.navHeader {
+    height: auto; /* Adjust height of navigation bar */
+}
+
+.navHeader ul.grid {
+    flex-direction: column; /* Change navigation links to column layout */
+    align-items: center; /* Center align navigation links */
+    padding-top: 10px; /* Add padding to top of navigation links */
+}
+
+.navHeader ul.grid li {
+    margin-bottom: 10px; /* Add margin between navigation links */
+}
+
+.navHeader ul.grid li a {
+    width: auto; /* Remove fixed width for navigation links */
+}
+
+#logo img {
+    width: 70px; /* Decrease logo size */
+    margin-top: 0; /* Remove negative margin */
+}
  
  h1{
      font-size: var(--header-f-size) !important;
