@@ -97,19 +97,13 @@
     </header>
     <section>
         <h1>Dine in Style: Secure Your Spot at Our Table!</h1>
-        <form>
-            <label>Full name</label>
+        <form class="form-container">
             <input type="text" id="full-name" placeholder="Full name" required>
-            <label>Email</label>
-            <input type="tel" id="phone-input" placeholder="Phone Number" required>
-            <label for="quantity">How many guests are you bringing?</label>
             <input type="number" id="quantity" name="quantity" min="1" max="14" placeholder="Guests">
-            <label for="date">Choose a date for your reservation:</label>
-            <input type="date" id="date" name="date">
-            <label for="time">Choose a time for your reservation:</label>
-            <input type="time" id="time" placeholder="Time" required>
-
-
+            <input type="tel" id="phone-input" placeholder="Phone Number" required>
+            <input type="time" id="time" name="date">
+            <input class="btn" id="btn-Se" type="submit" value="Send">
+            <input class="btn" id="btn-Cl" type="reset" value="Clear">
         </form>
     </section>
 

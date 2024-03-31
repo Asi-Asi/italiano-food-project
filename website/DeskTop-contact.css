@@ -136,7 +136,7 @@ a:hover::after{
     display: flex;
     background: #693103;
     background: -webkit-radial-gradient(circle, #693103 0%, #141414 100%);
-    background: radial-gradient(circle, #f1b04e 0%, #141414 100%);;
+    background: radial-gradient(circle, #f1b04e 0%, #141414 100%);
     width: 150%;
     height: 90vh;
     padding: 60px !important;
@@ -225,6 +225,7 @@ button a{
 button:hover{
     background-color: var(--clr-Basic);
     color: var(--clr-black);
-font-size: 1.14em;}
+font-size: 1.14em;
+}
 
 

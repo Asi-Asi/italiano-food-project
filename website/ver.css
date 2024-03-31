@@ -8,7 +8,7 @@
     --clr-beige:#e4b95b;
 
 /*font size*/
---main-header-f-size: 2.3em;
+--main-header-f-size: 2em;
 --header-f-size:1.4em; 
 --p-f-size: calc(var(--header-f-size)*0.7) ;
 }
