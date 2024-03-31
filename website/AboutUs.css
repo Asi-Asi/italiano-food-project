@@ -5,7 +5,7 @@
     display:  grid;
 }
 /* taplet setings */
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 600px) {
     #burggerIcon {
         display: block;
         filter: invert(100%);
@@ -23,7 +23,7 @@
     }
 
     .grid {
-        display: block;
+        display: none;
     }
 
     .grid-col {

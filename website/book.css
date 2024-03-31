@@ -5,14 +5,18 @@
     display: grid;
 }
 
-/* Default styles */
-
-/* Add your default styles here */
-
-/* Media query for screens up to 650px */
+/* tablet  screen setings */
 @media only screen and (max-width: 600px) {
     header {
         padding: 10px; /* Reduce padding for header */
+    }
+    #burggerIcon {
+        display: block;
+    }
+    
+    #hamburger {
+        display: none;
+        align-items: right !important;
     }
 
     .navHeader {
@@ -22,26 +26,26 @@
     .navHeader ul.grid {
         flex-direction: column; /* Change navigation links to column layout */
         align-items: center; /* Center align navigation links */
-        padding-top: 10px; /* Add padding to top of navigation links */
+        padding-top: 10px; 
     }
 
     .navHeader ul.grid li {
-        margin-bottom: 10px; /* Add margin between navigation links */
+        margin-bottom: 10px; 
     }
 
     .navHeader ul.grid li a {
-        width: auto; /* Remove fixed width for navigation links */
+        width: auto; 
     }
 
     #logo img {
-        width: 70px; /* Decrease logo size */
-        margin-top: 0; /* Remove negative margin */
+        width: 70px; 
+        margin-top: 0; 
     }
 
     h1 {
-        font-size: 24px; /* Decrease font size of heading */
-        width: auto; /* Adjust width of heading */
-        margin-top: 20px; /* Add margin to top of heading */
+        font-size: 24px; 
+        width: auto; 
+        margin-top: 20px; 
         margin-left:10vw !important;
         margin-right: 10vw !important;
     }
@@ -49,11 +53,72 @@
     form {
         width: auto; /* Adjust width of form */
         margin-left:10vw !important;
-        margin-right: 10vw !important; /* Center align form horizontally */
+        margin-right: 10vw !important; 
         
     }
 
     form input {
-        width: 100%; /* Make inputs full width */
+        width: 100%; 
+    }
+}
+
+
+
+/* mobile screen setings */
+@media only screen and (max-width: 325px) {
+    header {
+        padding: 10px; /* Reduce padding for header */
+    }
+
+    #burggerIcon {
+        display: block;
+    }
+    
+    #hamburger {
+        display: none;
+        align-items: right !important;
+    }
+
+
+    .navHeader {
+        height: auto; /* Adjust height of navigation bar */
+    }
+
+    .navHeader ul.grid {
+        flex-direction: column; /* Change navigation links to column layout */
+        align-items: center; /* Center align navigation links */
+        padding-top: 10px; 
+    }
+
+    .navHeader ul.grid li {
+        margin-bottom: 10px; 
+    }
+
+    .navHeader ul.grid li a {
+        width: auto; 
+    }
+
+    #logo img {
+        width: 70px; 
+        margin-top: 0; 
+    }
+
+    h1 {
+        font-size: 24px; 
+        width: auto; 
+        margin-top: 15px; 
+        margin-left:3vw !important;
+        margin-right: 3vw !important;
+    }
+
+    form {
+        width: auto; /* Adjust width of form */
+        margin-left:3vw !important;
+        margin-right: 3vw !important; 
+        
+    }
+
+    form input {
+        width: 100%; 
     }
 }
