@@ -245,4 +245,10 @@ nav ul li ul.drop-down li  span{
     margin-right: 500px;
     border-radius: 20px;
 }
-
+#footer {
+    background-color: #383848;
+    text-align: center;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 14px;
+  }

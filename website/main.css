@@ -56,7 +56,7 @@ ul {
 }
 header {
   height: 100vh;
-  background: url("./img/home_bg.jpeg") center center/cover no-repeat;
+  background: url("./assets/images/home_bg.jpeg") center center/cover no-repeat;
   position: relative;
 }
 
@@ -172,7 +172,7 @@ header * {
 }
 #offers {
   height: 80vh;
-  background: url("./img/offer-background.jpg") center center/cover fixed;
+  background: url("./assets/images/offer-background.jpg") center center/cover fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -276,7 +276,7 @@ header * {
 
 
 #daytime {
-  background: url("./img/daytime_bg.jpeg") center center/cover fixed no-repeat;
+  background: url("./assets/images/daytime_bg.jpeg") center center/cover fixed no-repeat;
   color: #fff;
   text-align: center;
 }
@@ -298,7 +298,7 @@ header * {
 }
 
 #gallery {
-  background: url("./img/offer-background.jpg") center center/cover;
+  background: url("./assets/images/offer-background.jpg") center center/cover;
   padding: 8rem 0 6rem;
 }
 #gallery h2 {
@@ -454,11 +454,16 @@ form button {
     flex-direction: column;
   }
 
+  
   @media (max-width: 600px) {
     #navbar {
       flex-direction: column;
     }
 
+    @media (max-width: 325px) {
+      #navbar {
+        flex-direction: column;
+    } 
     #navbar img {
       margin-bottom: 20px;
     }
@@ -511,4 +516,5 @@ form button {
       width: 80%;
     }
   }
+}
 }

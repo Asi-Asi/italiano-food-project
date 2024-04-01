@@ -310,11 +310,16 @@ body {
     #contact .contact-content {
       flex-direction: column;
     }
-  
+    
     @media (max-width: 600px) {
       #navbar {
         flex-direction: column;
       }
+  
+      @media (max-width: 325px) {
+        #navbar {
+          flex-direction: column;
+      } 
   
       #navbar img {
         margin-bottom: 20px;
@@ -369,4 +374,4 @@ body {
       }
     }
   }
-  
+}
