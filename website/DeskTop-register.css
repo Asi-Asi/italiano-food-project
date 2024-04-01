@@ -213,6 +213,16 @@ button a{
     color: var(--clr-balck);
     font-weight: bold;
 }
+<<<<<<< HEAD
 
 
 
+=======
+#footer {
+    background-color: #383848;
+    text-align: center;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 14px;
+  }
+>>>>>>> 831280c2f8f536001215ddb78c4e7b4f825c9484

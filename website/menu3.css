@@ -310,12 +310,24 @@ body {
     #contact .contact-content {
       flex-direction: column;
     }
+<<<<<<< HEAD
   
+=======
+    
+>>>>>>> 831280c2f8f536001215ddb78c4e7b4f825c9484
     @media (max-width: 600px) {
       #navbar {
         flex-direction: column;
       }
   
+<<<<<<< HEAD
+=======
+      @media (max-width: 325px) {
+        #navbar {
+          flex-direction: column;
+      } 
+  
+>>>>>>> 831280c2f8f536001215ddb78c4e7b4f825c9484
       #navbar img {
         margin-bottom: 20px;
       }
@@ -369,4 +381,8 @@ body {
       }
     }
   }
+<<<<<<< HEAD
   
+=======
+}
+>>>>>>> 831280c2f8f536001215ddb78c4e7b4f825c9484
