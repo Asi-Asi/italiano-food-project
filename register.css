@@ -1,0 +1,116 @@
+@import url('reset.css');
+@import url('ver.css');
+@import url('DeskTop-register.css');
+
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px; 
+    }
+
+    .container {
+        width: 90%; 
+        padding: 20px; 
+        height: auto; 
+        margin-top: 10vh; 
+        margin-left: -45vw !important;
+    }
+
+    form h1 {
+        margin-top: 10vh !important; 
+        margin-bottom: 3vh !important; 
+        font-size: 2em !important; 
+    }
+
+    form input {
+        width: 100%; 
+    }
+
+    .navHeader ul {
+        flex-wrap: wrap; 
+        justify-content: center; 
+    }
+
+    .navHeader ul li {
+        width: 100%; 
+        text-align: center; 
+        margin: 10px 0; 
+    }
+
+    .drop-down {
+        position: static; 
+        display: none; 
+    }
+
+    .navHeader ul li:hover .drop-down {
+        display: none; 
+    }
+
+    #hamburger {
+        flex-direction: column; 
+        display: none;
+    }
+
+    #burggerIcon {
+        display: block; 
+    }
+    
+
+}
+
+
+@media screen and (max-width: 325px) {
+    body {
+        font-size: 14px; 
+    }
+
+    .container {
+        width: 100%; 
+        padding: 20px; 
+        height: auto; 
+        margin-top: 10vh; 
+        margin-left: -50vw !important;
+    }
+
+    form h1 {
+        margin-top: 10vh !important; 
+        margin-bottom: 3vh !important; 
+        font-size: 2em !important; 
+    }
+
+    form input {
+        width: 100%; 
+    }
+
+    .navHeader ul {
+        flex-wrap: wrap; 
+        justify-content: center; 
+    }
+
+    .navHeader ul li {
+        width: 100%; 
+        text-align: center; 
+        margin: 10px 0; 
+    }
+
+    .drop-down {
+        position: static; 
+        display: none; 
+    }
+
+    .navHeader ul li:hover .drop-down {
+        display: none; 
+    }
+
+    #hamburger {
+        flex-direction: column; 
+        display: none;
+    }
+
+    #burggerIcon {
+        display: block; 
+    }
+    
+
+}
+

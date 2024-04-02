@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <title>Register</title>
+</head>
+<body>
+    <section>
+        <header>
+            <nav class="navHeader">
+                <div id="hamburger">
+                    <div id="burggerIcon"><img src="../assets/icons/menu_icon.svg" alt=""></div>
+                    <ul>
+                        <li class="grid">
+                            <a href="./main.html" id="logo"> 
+                                <img  src="../assets/images/atal2.png" alt="logo">
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="./main.html">
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Menus</span>
+                            </a>
+                            <div class="drop-down">
+                                <ul >
+                                    <li>
+                                        <a href="#">
+                                            <span>Pizza menu</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>Pastas menu</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>Dessert menu</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="book.html">
+                                            <span>Book</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="AboutUs.html">
+                                <span>Our story</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" >
+                                <span>Account</span>
+                            </a>
+                            <div class="drop-down">
+                                <ul>
+                                    <li>
+                                        <a href="log_in.html">
+                                            <span>Login</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">
+                                            <span>Register</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Others</span>
+                            </a>
+                            <div  class="drop-down">
+                                <ul>
+                                    <li>
+                                        <a href="Gallery.html">
+                                            <span>Gallery</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="feed-back.html">
+                                            <span>Rate Us</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">
+                                            <span>Contact Us</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <form class="container">
+                <h1 id="Register">Register</h1>
+                <label>Full Name</label>
+                <input type="text"  calss="input-group" name="Full name" required>
+                <label>Date of Birth:</label>
+                <input type="date" id="birthday" name="birthday">
+                <label>Phone number</label>
+                <input type="tel" id="phone Number" name="phone Number">
+                <label>Email</label>
+                <input type="email"id="email" name="email" required>
+                <label>Username</label>
+                <input type="text" id="UserName" name="UserName" required>
+                <label>Password</label>
+                <input type="password"name="password" required>
+                <label>Confirm-Password</label>
+                <input type="password"name="confirm-password" required>
+                <button  class="btn" type="submit"><a href="log_in.html">Register</a></button>
+                <button  class="btn-" type="reset"><a href="">Clear</a> </button>
+            </form>
+        </main>   
+    </section>
+</body>
+</html>
